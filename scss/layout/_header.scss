@@ -1,0 +1,429 @@
+#header {
+	background:$white;
+	position: relative;
+	z-index: 999;
+	@include media('<tablet') {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		z-index: 9999;
+	}
+	.holder {
+		margin: 0 auto;
+		max-width: 983px;
+		padding: 13px 10px 0;
+		overflow: hidden;
+		@include media('>=desktop') {
+			padding: 13px 0 0;
+		}
+		@include media('<tablet') {
+			padding: 0;
+		}
+	}
+	.logo {
+		float: left;
+		width: 133px;
+		@include media('<tablet') {
+			display: none;
+		}
+		img {
+			@include width;
+			display: block;
+		}
+	}
+	.right {
+		float: right;
+		text-align: right;
+		padding: 13px 0 0;
+		@include media('<tablet') {
+			display: none;
+		}
+	}
+	.lang {
+		@include listreset;
+		overflow: hidden;
+		font-size: 9px;
+		line-height: 9px;
+		font-weight: 600;
+		padding: 0 0 7px;
+		li {
+			@include vertical;
+			border-left: 1px solid  $light-gray;
+			padding: 0 0 0 7px;
+			margin:0 0 0 4px;
+			&:first-child {
+				border: 0;
+			}
+			a {
+				color: $light-gray;
+				text-decoration: none;
+			}
+			&:hover,
+			&.active {
+				font-weight: 700;
+				a {
+					color: $black2;
+				}
+			}
+		}
+	}
+	.btn-logout {
+		color: $light-gray;
+		font-size: 9px;
+		font-weight: 700;
+		line-height: 20px;
+		position: relative;
+		text-decoration: none;
+		opacity: 1;
+		@include animate(opacity);
+		&:hover {
+			opacity: 0.8;
+		}
+		i {
+			@include width(18px , 18px);
+			@include radius(100%);
+			@include position($top:-5px,  $left:-27px);
+			background:$light-blue;
+			text-align: center;
+			font-size: 9px;
+			color: $white;
+			line-height: 18px;
+		}
+	}
+}
+
+#nav {
+	overflow: hidden;
+	color: $light-gray;
+	text-transform: uppercase;
+	font: 11px/1.2 $proxima;
+	padding: 0 5px;
+	@include media('>=desktop') {
+		padding: 0 1% 0 5.5%;
+		letter-spacing: 1.4px;
+		font-size: 12px;
+	}
+	@include media('<tablet') {
+		padding: 0;
+		font-size: 9px;
+		box-shadow: 0 -6px 14px rgba(0, 0, 0, 0.25);
+	}
+	> ul {
+		@include listreset;
+		text-align: center;
+		@include media('<tablet') {
+			display: flex;
+			justify-content: space-between;
+			padding:6px 10px 12px;
+		}
+		> li {
+			@include vertical;
+			padding:0 8px;
+			@include media('>=desktop') {
+				padding:0 14px;
+			}
+			@include media('<tablet') {
+				display: block;
+			}
+			&.hide {
+				@include media('<tablet') {
+					display: none;
+				}
+			}
+			> a {
+				@include animate(color);
+				color: $light-gray;
+				text-decoration: none;
+				display: block;
+				padding: 0 0 22px;
+				position: relative;
+				@include media('<tablet') {
+					padding: 0;
+				}
+				&:before {
+					@include transform(translateX(-50%));
+					position: absolute;
+					bottom: 0;
+					left: 50%;
+					content: '';
+					border:10px solid;
+					border-color: transparent transparent $black1 transparent;
+					display: none;
+				}
+			}
+			&:hover {
+				.dropdown {
+					@include media('>=tablet') {
+						display: block;
+					}
+				}
+			}
+			&:hover,
+			&.active {
+				> a {
+					color: $black1;
+				}
+				i {
+					color: $light-blue;
+				}
+			}
+			&.active {
+				@include media('>=tablet') {
+					> a {
+						font-weight: 700;
+						&:before {
+							display: block;
+						}
+					}
+				}
+			}
+		}
+	}
+	span {
+		display: block;
+		text-align: center;
+		width: 100%;
+		height: 33px;
+		margin: 0 0 16px;
+		@include media('<tablet') {
+			margin: 0 0 5px;
+		}
+	}
+	i {
+		display: block;
+		color: $light-gray;
+		font-size: 33px;
+		line-height: 33px;
+		@include animate(color);
+		@include media('<tablet') {
+			font-size: 25px;
+		}
+		&.icon-ico-new {
+			font-size: 26px;
+			@include media('<tablet') {
+				font-size: 22px;
+			}
+		}
+		&.icon-ico-skyviewer {
+			font-size: 24px;
+			@include media('<tablet') {
+				font-size: 20px;
+			}
+		}
+		&.icon-ico-education {font-size: 27px;}
+		&.icon-ico-data {font-size: 30px;}
+	}
+	.dropdown {
+		@include position($top:100%);
+		right: 0;
+		background:$black1;
+		color:$white;
+		font-size: 14px;
+		font-weight: 400;
+		letter-spacing: 1px;
+		text-transform: capitalize;
+		padding: 23px 0 19px;
+		display: none;
+		&.add {
+			.drop-holder {
+				padding: 0 103px 0 0;
+			}
+			ul {
+				text-align: left;
+			}
+		}
+		.drop-holder {
+			max-width: 983px;
+			margin: 0 auto;
+			&:after {
+				display: block;
+				clear: both;
+				content: '';
+			}
+		}
+		ul {
+			@include listreset;
+			overflow: hidden;
+		}
+		li {
+			@include vertical;
+			padding: 0 15px;
+			position: relative;
+			a {
+				color: $white;
+				&:hover {
+					color: $blue;
+					font-weight: 700;
+					i {
+						color: $blue !important;
+					}
+				}
+			}
+			&.active {
+				a {
+					color: $blue;
+					font-weight: 700;
+				}
+			}
+			i {
+				@include position($top:-11px, $left:-16px);
+				font-size: 24px;
+				color: $white !important;
+			}
+		}
+		&.add2 {
+			ul {
+				overflow: visible;
+				li {
+					padding: 0 32px 0 16px;
+				}
+			}
+		}
+		.btn-full {
+			@include transform(translateY(-50%));
+			position: absolute;
+			top: 50%;
+			right: 15px;
+			color: $white;
+			i {
+				@include transform(translateY(-50%));
+				@include position($top:50%,  $left:-24px);
+				margin: -1px 0 0;
+				color: $white;
+				font-size: 14px;
+			}
+		}
+		.icons-list {
+			float: right;
+			overflow: visible !important;
+			margin: -8px 0 0;
+			li {
+				padding:0 0 0 7px;
+				a {
+					color: $white;
+					&:hover {
+						color: $blue;
+						i {
+							color: $blue;
+						}
+					}
+				}
+				i {
+					position: static !important;
+					color: $white;
+					font-size: 24px;
+					line-height: 1;
+				}
+			}
+		}
+	}
+}
+
+.header-top {
+	display: none;
+	background:$black1;
+	@include media('<tablet') {
+		display: block;
+	}
+	.top {
+		overflow: hidden;
+		display: flex;
+		justify-content: space-between;
+		padding:28px 20px 10px 20px;
+	}
+	.logo {
+		width: 80px;
+	}
+	.setting {
+		color: $white;
+		font-size: 23px;
+		line-height: 1;
+		i {
+			display: block;
+		}
+	}
+	.add-nav {
+		overflow: hidden;
+		background:$border-clr2;
+		font-size: 12px;
+		line-height: 18px;
+		font-weight: 700;
+		ul {
+			@include listreset;
+			display: flex;
+			li {
+				width: 33.33%;
+				&.active {
+					a {
+						color: $blue;
+					}
+				}
+			}
+			a {
+				color: $white;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+				display: block;
+				padding: 15px 0 24px;
+				text-align: center;
+			}
+		}
+	}
+}
+
+.drop-block {
+	@include listreset;
+	background:$black1;
+	font:700 12px/1.2 $proxima;
+	text-transform: uppercase;
+	padding: 19px 20px 14px;
+	letter-spacing: 1.25px;
+	z-index: 9999;
+	position: relative;
+	@include media('>=tablet') {
+		display: none;
+	}
+	 > li {
+		 > a {
+			color: $blue;
+			display: block;
+			position: relative;
+			&:before {
+				position: absolute;
+				top: 0;
+				right: 0;
+				content: "\e90e";
+				font: 12px/1 'icomoon';
+				transform:rotate(90deg);
+			}
+		}
+	}
+	&.active {
+		.slide-drop {
+			display: block;
+		}
+	}
+	.slide-drop {
+		@include listreset;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+		padding: 20px 25px;
+		background:$black1;
+		font-size: 15px;
+		display: none;
+		i {
+			font-size: 20px;
+			margin: 0 20px 0 0;
+		}
+		li {
+			padding: 15px 0 0;
+			&:first-child {padding: 0;}
+			a {
+				color: $white;
+			}
+		}
+	}
+}

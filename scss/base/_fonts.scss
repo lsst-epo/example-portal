@@ -1,0 +1,326 @@
+@font-face {
+	font-family: 'icomoon';
+	src: url('../fonts/icomoon.woff?g0pd23') format('woff'),
+		 url('../fonts/icomoon.woff2?66mm5u') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Futura';
+	src: url('../fonts/Futura-Bold.eot');
+	src: url('../fonts/Futura-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Futura-Bold.woff2') format('woff2'),
+		url('../fonts/Futura-Bold.woff') format('woff'),
+		url('../fonts/Futura-Bold.ttf') format('truetype'),
+		url('../fonts/Futura-Bold.svg#Futura-Bold') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Futura';
+	src: url('../fonts/FuturaBT-Book.eot');
+	src: url('../fonts/FuturaBT-Book.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/FuturaBT-Book.woff2') format('woff2'),
+		url('../fonts/FuturaBT-Book.woff') format('woff'),
+		url('../fonts/FuturaBT-Book.ttf') format('truetype'),
+		url('../fonts/FuturaBT-Book.svg#FuturaBT-Book') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Futura';
+	src: url('../fonts/FuturaBT-LightCondensed.eot');
+	src: url('../fonts/FuturaBT-LightCondensed.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/FuturaBT-LightCondensed.woff2') format('woff2'),
+		url('../fonts/FuturaBT-LightCondensed.woff') format('woff'),
+		url('../fonts/FuturaBT-LightCondensed.ttf') format('truetype'),
+		url('../fonts/FuturaBT-LightCondensed.svg#FuturaBT-LightCondensed') format('svg');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Futura';
+	src: url('../fonts/FuturaBT-Medium.eot');
+	src: url('../fonts/FuturaBT-Medium.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/FuturaBT-Medium.woff2') format('woff2'),
+		url('../fonts/FuturaBT-Medium.woff') format('woff'),
+		url('../fonts/FuturaBT-Medium.ttf') format('truetype'),
+		url('../fonts/FuturaBT-Medium.svg#FuturaBT-Medium') format('svg');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Futura';
+	src: url('../fonts/FuturaBT-Heavy.eot');
+	src: url('../fonts/FuturaBT-Heavy.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/FuturaBT-Heavy.woff2') format('woff2'),
+		url('../fonts/FuturaBT-Heavy.woff') format('woff'),
+		url('../fonts/FuturaBT-Heavy.ttf') format('truetype'),
+		url('../fonts/FuturaBT-Heavy.svg#FuturaBT-Heavy') format('svg');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Proxima Nova';
+	src: url('../fonts/ProximaNova-Light.eot');
+	src: url('../fonts/ProximaNova-Light.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/ProximaNova-Light.woff2') format('woff2'),
+		url('../fonts/ProximaNova-Light.woff') format('woff'),
+		url('../fonts/ProximaNova-Light.ttf') format('truetype'),
+		url('../fonts/ProximaNova-Light.svg#ProximaNova-Light') format('svg');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Proxima Nova';
+	src: url('../fonts/ProximaNova-Semibold.eot');
+	src: url('../fonts/ProximaNova-Semibold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/ProximaNova-Semibold.woff2') format('woff2'),
+		url('../fonts/ProximaNova-Semibold.woff') format('woff'),
+		url('../fonts/ProximaNova-Semibold.ttf') format('truetype'),
+		url('../fonts/ProximaNova-Semibold.svg#ProximaNova-Semibold') format('svg');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Proxima Nova';
+	src: url('../fonts/ProximaNova-Regular.eot');
+	src: url('../fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/ProximaNova-Regular.woff2') format('woff2'),
+		url('../fonts/ProximaNova-Regular.woff') format('woff'),
+		url('../fonts/ProximaNova-Regular.ttf') format('truetype'),
+		url('../fonts/ProximaNova-Regular.svg#ProximaNova-Regular') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Proxima Nova';
+	src: url('../fonts/ProximaNova-Bold.eot');
+	src: url('../fonts/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/ProximaNova-Bold.woff2') format('woff2'),
+		url('../fonts/ProximaNova-Bold.woff') format('woff'),
+		url('../fonts/ProximaNova-Bold.ttf') format('truetype'),
+		url('../fonts/ProximaNova-Bold.svg#ProximaNova-Bold') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Proxima Nova';
+	src: url('../fonts/ProximaNova-Black.eot');
+	src: url('../fonts/ProximaNova-Black.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/ProximaNova-Black.woff2') format('woff2'),
+		url('../fonts/ProximaNova-Black.woff') format('woff'),
+		url('../fonts/ProximaNova-Black.ttf') format('truetype'),
+		url('../fonts/ProximaNova-Black.svg#ProximaNova-Black') format('svg');
+	font-weight: 900;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: 'icomoon' !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-info2:before {
+  content: "\e93c";
+}
+.icon-data:before {
+  content: "\e93b";
+}
+.icon-tours:before {
+  content: "\e930";
+}
+.icon-tooltip:before {
+  content: "\e931";
+}
+.icon-stars1:before {
+  content: "\e932";
+}
+.icon-setting:before {
+  content: "\e933";
+}
+.icon-replay:before {
+  content: "\e934";
+}
+.icon-play:before {
+  content: "\e935";
+}
+.icon-info:before {
+  content: "\e936";
+}
+.icon-filter:before {
+  content: "\e937";
+}
+.icon-download:before {
+  content: "\e938";
+}
+.icon-binoculars:before {
+  content: "\e939";
+}
+.icon-bars:before {
+  content: "\e93a";
+}
+.icon-ico-gallery:before {
+  content: "\e92f";
+}
+.icon-arrow:before {
+  content: "\e900";
+}
+.icon-arrow2:before {
+  content: "\e901";
+}
+.icon-icon1:before {
+  content: "\e902";
+}
+.icon-ico-list:before {
+  content: "\e903";
+}
+.icon-ico-grid:before {
+  content: "\e904";
+}
+.icon-ico-comment:before {
+  content: "\e905";
+}
+.icon-ico-view:before {
+  content: "\e906";
+}
+.icon-ico-plus:before {
+  content: "\e907";
+}
+.icon-icon-optic:before {
+  content: "\e908";
+}
+.icon-ico-energy:before {
+  content: "\e909";
+}
+.icon-icon-go-arrow:before {
+  content: "\e90a";
+}
+.icon-ico-system:before {
+  content: "\e90b";
+}
+.icon-ico-helmet:before {
+  content: "\e90c";
+}
+.icon-icon-telecope:before {
+  content: "\e90d";
+}
+.icon-ico-arrowright:before {
+  content: "\e90e";
+}
+.icon-ico-arrowleft:before {
+  content: "\e90f";
+}
+.icon-ico-fullscreen:before {
+  content: "\e910";
+}
+.icon-ico-back-top:before {
+  content: "\e911";
+}
+.icon-ico-tumblr:before {
+  content: "\e912";
+}
+.icon-ico-youtube:before {
+  content: "\e913";
+}
+.icon-ico-facebook:before {
+  content: "\e914";
+}
+.icon-ico-instagram:before {
+  content: "\e915";
+}
+.icon-ico-github:before {
+  content: "\e916";
+}
+.icon-ico-twitter:before {
+  content: "\e917";
+}
+.icon-ico-loadmore:before {
+  content: "\e918";
+}
+.icon-icon-date:before {
+  content: "\e919";
+}
+.icon-ico-fill-star:before {
+  content: "\e91a";
+}
+.icon-ico-star:before {
+  content: "\e91b";
+}
+.icon-ico-share:before {
+  content: "\e91c";
+}
+.icon-icon-discovery2:before {
+  content: "\e91d";
+}
+.icon-icon-close:before {
+  content: "\e91e";
+}
+.icon-icon-search:before {
+  content: "\e91f";
+}
+.icon-icon-filter:before {
+  content: "\e920";
+}
+.icon-ico-play:before {
+  content: "\e921";
+}
+.icon-ico-rectangle:before {
+  content: "\e922";
+}
+.icon-icon-camera:before {
+  content: "\e923";
+}
+.icon-icon-terabytes:before {
+  content: "\e924";
+}
+.icon-icon-alerts:before {
+  content: "\e925";
+}
+.icon-icon-status:before {
+  content: "\e926";
+}
+.icon-ico-man:before {
+  content: "\e927";
+}
+.icon-ico-collection:before {
+  content: "\e928";
+}
+.icon-ico-discovery:before {
+  content: "\e929";
+}
+.icon-ico-education:before {
+  content: "\e92a";
+}
+.icon-ico-discovery2:before {
+  content: "\e92b";
+}
+.icon-ico-skyviewer:before {
+  content: "\e92c";
+}
+.icon-ico-data:before {
+  content: "\e92d";
+}
+.icon-ico-new:before {
+  content: "\e92e";
+}

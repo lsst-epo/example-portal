@@ -1,0 +1,1469 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>LSST</title>
+	<link media="all" rel="stylesheet" href="css/main.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" defer></script>
+	<script>window.jQuery || document.write('<script src="js/jquery-3.2.1.min.js" defer><\/script>')</script>
+	<script src="js/jquery.main.js" defer></script>
+</head>
+<body>
+	<div id="wrapper">
+		<header id="header">
+			<div class="holder">
+				<a href="index.html" class="logo"><img src="images/logo.svg" alt="LSST"></a>
+				<div class="right">
+					<ul class="lang">
+						<li class="active"><a href="#">English</a></li>
+						<li><a href="#">Español</a></li>
+					</ul>
+					<a href="#" class="btn-logout">Log Out <i class="icon-ico-man"></i></a>
+				</div>
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html"><span><i class="icon-ico-new"></i></span> NEW</a></li>
+						<li class="hide"><a href="data.html"><span><i class="icon-data"></i></span> DATA</a></li>
+						<li class="active">
+							<a href="skyviewer.html"><span><i class="icon-ico-skyviewer"></i></span> SKYVIEWER</a>
+							<div class="dropdown add2">
+								<a href="#" class="btn-full"><i class="icon-ico-fullscreen"></i> FULL SCREEN</a>
+								<div class="drop-holder">
+									<ul>
+										<li><a class="btn-happen" href="#"><i class="icon-binoculars"></i> Happening Now</a></li>
+										<li><a class="btn-celestial" href="#"><i class="icon-tours"></i> Celestial Tours</a></li>
+										<li><a class="btn-filter" href="#"><i class="icon-filter"></i> Filter Objects</a></li>
+										<li><a class="btn-ojbect" href="#"><i class="icon-stars1"></i> Your Objects</a></li>
+										<li><a class="btn-info" href="#"><i class="icon-info2"></i> Info</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="article.html"><span><i class="icon-ico-discovery"></i></span> DISCOVERIES</a>
+							<div class="dropdown">
+								<div class="drop-holder">
+									<ul>
+										<li><a href="solarsystem.html">Solar System</a></li>
+										<li><a href="changingcosmos.html">Changing Cosmos</a></li>
+										<li><a href="galaxies.html">Galaxies</a></li>
+										<li><a href="theuniverse.html">The Universe</a></li>
+										<li><a href="technology.html">Technology</a></li>
+										<li><a href="projects.html">Join the Research</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="hide">
+							<a href="education.html"><span><i class="icon-ico-education"></i></span> EDUCATORS</a>
+							<div class="dropdown">
+								<div class="drop-holder">
+									<ul>
+										<li><a href="#">Activities</a></li>
+										<li><a href="#">Professional Development</a></li>
+										<li><a href="#">Tutorials</a></li>
+										<li><a href="#">Astronomy Dictionary</a></li>
+										<li><a href="#">Online Forum</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li><a href="gallery.html"><span><i class="icon-ico-gallery"></i></span> GALLERY</a></li>
+						<li>
+							<a href="collections.html"><span><i class="icon-ico-collection"></i></span> COLLECTIONS</a>
+							<div class="dropdown add">
+								<div class="drop-holder">
+									<ul class="icons-list">
+										<li><a href="#"><i class="icon-setting"></i></a></li>
+										<li><a href="#"><i class="icon-icon-filter"></i></a></li>
+										<li><a href="#"><i class="icon-icon-search"></i></a></li>
+									</ul>
+									<ul>
+										<li class="active"><a href="#">My Collection</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<ul class="drop-block">
+			<li><a class="btn-opener" href="#">skyviewer</a></li>
+			<ul class="slide-drop">
+				<li><a class="btn-happen" href="#"><i class="icon-binoculars"></i> Happening Now</a></li>
+				<li><a class="btn-celestial" href="#"><i class="icon-tours"></i> Celestial Tours</a></li>
+				<li><a class="btn-filter" href="#"><i class="icon-filter"></i> Filter Objects</a></li>
+				<li><a class="btn-ojbect" href="#"><i class="icon-stars1"></i> Your Objects</a></li>
+				<li><a class="btn-info" href="#"><i class="icon-info2"></i> Info</a></li>
+			</ul>
+		</ul>
+		<div id="sky-container">
+			<div class="img-sky">
+				<picture>
+					<source srcset="images/img77.jpg" media="(max-width: 767px)">
+					<source srcset="images/img54.jpg" media="(max-width: 767px)">
+					<img src="images/img54.jpg" alt="image description">
+				</picture>
+			</div>
+			<div class="tootip-blocks">
+				<div class="tooltip-box pink add1">
+					<div class="topheader">
+						<img src="images/img76.png" alt="image description" class="alignleft">
+						<div class="txt">
+							<span class="head">GALAXY</span>
+							<span class="code">LSST 238439932</span>
+							<span class="location">LOCATION <span>RA: 21h 30m 03s  |  DEC: -34:55:30</span></span>
+						</div>
+					</div>
+					<div class="bottom">
+						<a href="#">+ ZOOM IN</a>
+					</div>
+				</div>
+				<div class="tooltip-box pink add2">
+					<div class="topheader">
+						<img src="images/img76.png" alt="image description" class="alignleft">
+						<div class="txt">
+							<span class="head">GALAXY</span>
+							<span class="code">LSST 238439932</span>
+							<span class="location">LOCATION <span>RA: 21h 30m 03s  |  DEC: -34:55:30</span></span>
+						</div>
+					</div>
+					<p>This beautiful spiral galaxy shows its edge to us - we look through a thick pancake-like disk of dust that looks dark as it blocks the light from the stars shining behind it.</p>
+					<div class="bottom">
+						<a href="#">+ ZOOM IN</a>
+						<a href="#">+ TOUR OF SIMILAR OBJECTS</a>
+					</div>
+				</div>
+				<div class="tooltip-box pink pink-add add3">
+					<div class="topheader">
+						<div class="txt">
+							<span class="head">GALAXY</span>
+							<span class="code">LSST 238439932</span>
+							<span class="location">LOCATION <span>RA: 21h 30m 03s  |  DEC: -34:55:30</span></span>
+						</div>
+					</div>
+					<p>Detailed data for this object is not in the public catalog.</p>
+					<div class="bottom">
+						<a href="#">+ CUT OUT IMAGE</a>
+						<a href="#">+ SHARE LOCATION LINK</a>
+					</div>
+				</div>
+			</div>
+			<div class="overview-block" style="display: none;">
+				<div class="overview-holder">
+					<h1>Explore the Largest Panoramic <br>Image of Space Ever Captured</h1>
+					<div class="overview-slider">
+						<div class="mask">
+							<div class="slideset">
+								<div class="slide">
+									<div class="img-holder">
+										<div class="img">
+											<img src="images/img56.png" alt="image description">
+										</div>
+										<div class="img2">
+											<img src="images/img57.png" alt="image description">
+										</div>
+									</div>
+									<div class="txt">
+										<p>Use the skyviewer to explore the yearly catalog of <br>thousands of combined images from LSST</p>
+									</div>
+								</div>
+								<div class="slide">
+									<div class="img-holder add1">
+										<div class="img">
+											<img src="images/img58.png" alt="image description">
+										</div>
+										<div class="img2">
+											<img src="images/img59.png" alt="image description">
+										</div>
+									</div>
+									<div class="txt">
+										<p>Learn about discoveries through object tours <br>and engaging animations</p>
+									</div>
+								</div>
+								<div class="slide">
+									<div class="img-holder add2">
+										<div class="img">
+											<img src="images/img60.png" alt="image description">
+										</div>
+									</div>
+									<div class="txt">
+										<p>See what LSST is currently viewing and an <br>overview of data it’s collecting</p>
+									</div>
+								</div>
+								<div class="slide">
+									<div class="img-holder">
+										<div class="img">
+											<img src="images/img61.png" alt="image description">
+										</div>
+										<div class="img2">
+											<img src="images/img62.png" alt="image description">
+										</div>
+									</div>
+									<div class="txt">
+										<p>Keep up-to-date with millions of celestial <br>objects curated by LSST</p>
+									</div>
+								</div>
+								<div class="slide">
+									<div class="img-holder">
+										<div class="img">
+											<img src="images/img63.png" alt="image description">
+										</div>
+										<div class="img2">
+											<img src="images/img62.png" alt="image description">
+										</div>
+									</div>
+									<div class="txt">
+										<p>Look for these icons to share <br>your experience with others.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<ul class="pagination">
+							<li class="active"><a href="href#">1</a></li>
+							<li><a href="href#">2</a></li>
+							<li><a href="href#">3</a></li>
+							<li><a href="href#">4</a></li>
+							<li><a href="href#">5</a></li>
+						</ul>
+						<a href="#" class="btn-next">
+							<span class="ico"><i class="icon-arrow"></i></span>
+							<span class="txt">Next</span>
+						</a>
+						<a href="#" class="btn-prev">
+							<span class="ico"><i class="icon-arrow2"></i></span>
+							<span class="txt">Next</span>
+						</a>
+					</div>
+					<span class="skip-overview"><a href="#">SKIP OVERVIEW</a></span>
+				</div>
+			</div>
+			<form action="#" class="search-block">
+				<fieldset>
+					<a href="#" class="search-opener"><i class="icon-icon-search"></i></a>
+					<div class="form-show">
+						<div class="form-row">
+							<button><i class="icon-icon-search"></i></button>
+							<input type="search" placeholder="Search">
+						</div>
+						<h2>You can search for… </h2>
+						<ul>
+							<li>
+								<h3><a href="#">Types of Objects</a></h3>
+								<span class="txt">e.g. Active Supernova, Spiral Galaxies, etc</span>
+								<span class="info">i</span>
+							</li>
+							<li>
+								<h3><a href="#">Specific Objects</a></h3>
+								<span class="txt">e.g. LSST 203843, Andromeda, etc </span>
+								<span class="info">i</span>
+							</li>
+							<li>
+								<h3><a href="#">Input Coordinates</a></h3>
+								<span class="txt">e.g. 21:32:32, 23:30:23</span>
+								<span class="info">i</span>
+							</li>
+						</ul>
+						<span class="button-row">
+							<a href="#">SHOW ME SOMETHING COOL</a>
+						</span>
+					</div>
+				</fieldset>
+			</form>
+			<div class="project-slider">
+				<a href="#" class="opener">
+					<span class="open">View Images</span>
+					<span class="close">Close</span>
+				</a>
+				<div class="slide">
+					<h3>Objects in Viewport <span>13 Objects</span></h3>
+					<div class="holder jcf-scrollable">
+						<ul>
+							<li>
+								<div class="img">
+									<img src="images/img55.jpg" alt="image description">
+								</div>
+								<span class="title">OBJECT</span>
+								<span class="name">NAME</span>
+							</li>
+							<li>
+								<div class="img">
+									<img src="images/img55.jpg" alt="image description">
+								</div>
+								<span class="title">OBJECT</span>
+								<span class="name">NAME</span>
+							</li>
+							<li class="active">
+								<div class="img">
+									<img src="images/img55.jpg" alt="image description">
+								</div>
+								<span class="title">OBJECT</span>
+								<span class="name">NAME</span>
+							</li>
+							<li>
+								<div class="img">
+									<img src="images/img55.jpg" alt="image description">
+								</div>
+								<span class="title">OBJECT</span>
+								<span class="name">NAME</span>
+							</li>
+							<li>
+								<div class="img">
+									<img src="images/img55.jpg" alt="image description">
+								</div>
+								<span class="title">OBJECT</span>
+								<span class="name">NAME</span>
+							</li>
+							<li>
+								<div class="img">
+									<img src="images/img55.jpg" alt="image description">
+								</div>
+								<span class="title">OBJECT</span>
+								<span class="name">NAME</span>
+							</li>
+							<li>
+								<div class="img">
+									<img src="images/img55.jpg" alt="image description">
+								</div>
+								<span class="title">OBJECT</span>
+								<span class="name">NAME</span>
+							</li>
+							<li>
+								<div class="img">
+									<img src="images/img55.jpg" alt="image description">
+								</div>
+								<span class="title">OBJECT</span>
+								<span class="name">NAME</span>
+							</li>
+							<li>
+								<div class="img">
+									<img src="images/img55.jpg" alt="image description">
+								</div>
+								<span class="title">OBJECT</span>
+								<span class="name">NAME</span>
+							</li>
+							<li>
+								<div class="img">
+									<img src="images/img55.jpg" alt="image description">
+								</div>
+								<span class="title">OBJECT</span>
+								<span class="name">NAME</span>
+							</li>
+							<li>
+								<div class="img">
+									<img src="images/img55.jpg" alt="image description">
+								</div>
+								<span class="title">OBJECT</span>
+								<span class="name">NAME</span>
+							</li>
+							<li>
+								<div class="img">
+									<img src="images/img55.jpg" alt="image description">
+								</div>
+								<span class="title">OBJECT</span>
+								<span class="name">NAME</span>
+							</li>
+							<li>
+								<div class="img">
+									<img src="images/img55.jpg" alt="image description">
+								</div>
+								<span class="title">OBJECT</span>
+								<span class="name">NAME</span>
+							</li>
+							<li>
+								<div class="img">
+									<img src="images/img55.jpg" alt="image description">
+								</div>
+								<span class="title">OBJECT</span>
+								<span class="name">NAME</span>
+							</li>
+							<li>
+								<div class="img">
+									<img src="images/img55.jpg" alt="image description">
+								</div>
+								<span class="title">OBJECT</span>
+								<span class="name">NAME</span>
+							</li>
+							<li>
+								<div class="img">
+									<img src="images/img55.jpg" alt="image description">
+								</div>
+								<span class="title">OBJECT</span>
+								<span class="name">NAME</span>
+							</li>
+							<li>
+								<div class="img">
+									<img src="images/img55.jpg" alt="image description">
+								</div>
+								<span class="title">OBJECT</span>
+								<span class="name">NAME</span>
+							</li>
+							<li>
+								<div class="img">
+									<img src="images/img55.jpg" alt="image description">
+								</div>
+								<span class="title">OBJECT</span>
+								<span class="name">NAME</span>
+							</li>
+							<li>
+								<div class="img">
+									<img src="images/img55.jpg" alt="image description">
+								</div>
+								<span class="title">OBJECT</span>
+								<span class="name">NAME</span>
+							</li>
+							<li>
+								<div class="img">
+									<img src="images/img55.jpg" alt="image description">
+								</div>
+								<span class="title">OBJECT</span>
+								<span class="name">NAME</span>
+							</li>
+							<li>
+								<div class="img">
+									<img src="images/img55.jpg" alt="image description">
+								</div>
+								<span class="title">OBJECT</span>
+								<span class="name">NAME</span>
+							</li>
+							<li>
+								<div class="img">
+									<img src="images/img55.jpg" alt="image description">
+								</div>
+								<span class="title">OBJECT</span>
+								<span class="name">NAME</span>
+							</li>
+							<li>
+								<div class="img">
+									<img src="images/img55.jpg" alt="image description">
+								</div>
+								<span class="title">OBJECT</span>
+								<span class="name">NAME</span>
+							</li>
+							<li>
+								<div class="img">
+									<img src="images/img55.jpg" alt="image description">
+								</div>
+								<span class="title">OBJECT</span>
+								<span class="name">NAME</span>
+							</li>
+							<li>
+								<div class="img">
+									<img src="images/img55.jpg" alt="image description">
+								</div>
+								<span class="title">OBJECT</span>
+								<span class="name">NAME</span>
+							</li>
+							<li>
+								<div class="img">
+									<img src="images/img55.jpg" alt="image description">
+								</div>
+								<span class="title">OBJECT</span>
+								<span class="name">NAME</span>
+							</li>
+							<li>
+								<div class="img">
+									<img src="images/img55.jpg" alt="image description">
+								</div>
+								<span class="title">OBJECT</span>
+								<span class="name">NAME</span>
+							</li>
+							<li>
+								<div class="img">
+									<img src="images/img55.jpg" alt="image description">
+								</div>
+								<span class="title">OBJECT</span>
+								<span class="name">NAME</span>
+							</li>
+							<li>
+								<div class="img">
+									<img src="images/img55.jpg" alt="image description">
+								</div>
+								<span class="title">OBJECT</span>
+								<span class="name">NAME</span>
+							</li>
+							<li>
+								<div class="img">
+									<img src="images/img55.jpg" alt="image description">
+								</div>
+								<span class="title">OBJECT</span>
+								<span class="name">NAME</span>
+							</li>
+							<li>
+								<div class="img">
+									<img src="images/img55.jpg" alt="image description">
+								</div>
+								<span class="title">OBJECT</span>
+								<span class="name">NAME</span>
+							</li>
+							<li>
+								<div class="img">
+									<img src="images/img55.jpg" alt="image description">
+								</div>
+								<span class="title">OBJECT</span>
+								<span class="name">NAME</span>
+							</li>
+							<li>
+								<div class="img">
+									<img src="images/img55.jpg" alt="image description">
+								</div>
+								<span class="title">OBJECT</span>
+								<span class="name">NAME</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="celestial-block">
+				<header class="skyviewer-head">
+					<a href="#" class="btn-back"><i class="icon-arrow2"></i></a>
+					<span class="info">?</span>
+					<h3>Celestial Tours</h3>
+				</header>
+				<div class="notification-box">
+					<a href="#" class="btn-close"><i class="icon-icon-close"></i></a>
+					<span class="telescope"></span>
+					<p>One sentence about what this notification is about</p>
+				</div>
+				<div class="skyviewer-holder jcf-scrollable">
+					<ul class="skyviewer-list">
+						<li>
+							<div class="box">
+								<img src="images/img64.jpg" alt="image description">
+								<span class="badge">new</span>
+								<div class="caption">
+									<div>
+										<span class="title">OBJECT TOUR</span>
+										<h3><a href="#">New LSST Discoveries</a></h3>
+										<p>Keep up-to-date with the most <br>notable discoveries using LSST data</p>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="box">
+								<img src="images/img65.jpg" alt="image description">
+								<div class="caption">
+									<div>
+										<span class="title">INTERACTIVE ANIMATION</span>
+										<h3><a href="#">Supernova Time-Lapse</a></h3>
+										<p>Watch and listen to the thousands of <br>Supernova LSST has discovered</p>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="box">
+								<img src="images/img66.jpg" alt="image description">
+								<div class="caption">
+									<div>
+										<span class="title">OBJECT TOUR</span>
+										<h3><a href="#">10 Beautiful Galaxies</a></h3>
+										<p>Learn about some of the most interesting <br>new galaxies LSST has discovered</p>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="box">
+								<img src="images/img67.jpg" alt="image description">
+								<div class="caption">
+									<div>
+										<span class="title">AUDIO TOUR</span>
+										<h3><a href="#">10 Unknown Objects</a></h3>
+										<p>View some of the brightest object <br>in the universe</p>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="box">
+								<img src="images/img65.jpg" alt="image description">
+								<div class="caption">
+									<div>
+										<span class="title">INTERACTIVE ANIMATION</span>
+										<h3><a href="#">Supernova Time-Lapse</a></h3>
+										<p>Watch and listen to the thousands of <br>Supernova LSST has discovered</p>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="box">
+								<img src="images/img66.jpg" alt="image description">
+								<div class="caption">
+									<div>
+										<span class="title">OBJECT TOUR</span>
+										<h3><a href="#">Main-Belt Asteroids</a></h3>
+										<p>View a selection of the 5.5 million Main-Belt <br>asteroids tracked by LSST</p>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="box">
+								<img src="images/img67.jpg" alt="image description">
+								<div class="caption">
+									<div>
+										<span class="title">AUDIO TOUR</span>
+										<h3><a href="#">10 Unknown Objects</a></h3>
+										<p>View some of the brightest object <br>in the universe</p>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="box">
+								<img src="images/img67.jpg" alt="image description">
+								<div class="caption">
+									<div>
+										<span class="title">AUDIO TOUR</span>
+										<h3><a href="#">10 Unknown Objects</a></h3>
+										<p>View some of the brightest object <br>in the universe</p>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="box">
+								<img src="images/img67.jpg" alt="image description">
+								<div class="caption">
+									<div>
+										<span class="title">AUDIO TOUR</span>
+										<h3><a href="#">10 Unknown Objects</a></h3>
+										<p>View some of the brightest object <br>in the universe</p>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="box">
+								<img src="images/img67.jpg" alt="image description">
+								<div class="caption">
+									<div>
+										<span class="title">AUDIO TOUR</span>
+										<h3><a href="#">10 Unknown Objects</a></h3>
+										<p>View some of the brightest object <br>in the universe</p>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="box">
+								<img src="images/img67.jpg" alt="image description">
+								<div class="caption">
+									<div>
+										<span class="title">AUDIO TOUR</span>
+										<h3><a href="#">10 Unknown Objects</a></h3>
+										<p>View some of the brightest object <br>in the universe</p>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="box">
+								<img src="images/img67.jpg" alt="image description">
+								<div class="caption">
+									<div>
+										<span class="title">AUDIO TOUR</span>
+										<h3><a href="#">10 Unknown Objects</a></h3>
+										<p>View some of the brightest object <br>in the universe</p>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="object-block">
+				<header class="skyviewer-head">
+					<a href="#" class="btn-back"><i class="icon-arrow2"></i></a>
+					<span class="info">?</span>
+					<h3>Your Object</h3>
+				</header>
+				<ul class="tabset-block">
+					<li><a href="#save1">SAVED</a></li>
+					<li class="active"><a href="#collection1">COLLECTIONS</a></li>
+					<li><a href="#history1">HISTORY</a></li>
+				</ul>
+				<div class="skyview-content">
+					<div id="save1">
+						<div class="skyviewer-holder jcf-scrollable">
+							<ul class="list">
+								<li>
+									<div class="collection-box">
+										<img src="images/img53.jpg" alt="image description" class="alignleft">
+										<div class="box">
+											<span class="title">Near GALAXY</span>
+											<span class="reference">LSST 38239823434</span>
+											<time datetime="2023-02-23">Last Update: 2/23/2023</time>
+											<a href="#" class="link">+ ADD TO COLLECTION</a>
+										</div>
+										<ul class="share-list">
+											<li><a href="#"><i class="icon-ico-share"></i></a></li>
+											<li class="active">
+												<a href="#">
+													<i class="icon-ico-star"></i>
+													<i class="icon-ico-fill-star fill"></i>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<div class="collection-box">
+										<img src="images/img53.jpg" alt="image description" class="alignleft">
+										<div class="box">
+											<span class="title">Near GALAXY</span>
+											<span class="reference">LSST 2034348</span>
+											<time datetime="2023-02-23">Last Update: 2/23/2023</time>
+											<a href="#" class="link">+ ADD TO COLLECTION</a>
+										</div>
+										<ul class="share-list">
+											<li><a href="#"><i class="icon-ico-share"></i></a></li>
+											<li class="active">
+												<a href="#">
+													<i class="icon-ico-star"></i>
+													<i class="icon-ico-fill-star fill"></i>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<div class="collection-box">
+										<img src="images/img53.jpg" alt="image description" class="alignleft">
+										<div class="box">
+											<span class="title">ASTEROID</span>
+											<span class="reference">LSST 348348</span>
+											<time datetime="2023-02-23">Last Update: 2/23/2023</time>
+											<a href="#" class="link">+ ADD TO COLLECTION</a>
+										</div>
+										<ul class="share-list">
+											<li><a href="#"><i class="icon-ico-share"></i></a></li>
+											<li class="active">
+												<a href="#">
+													<i class="icon-ico-star"></i>
+													<i class="icon-ico-fill-star fill"></i>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<div class="collection-box">
+										<img src="images/img53.jpg" alt="image description" class="alignleft">
+										<div class="box">
+											<span class="title">Red dwarf star</span>
+											<span class="reference">LSST 209349</span>
+											<time datetime="2023-02-23">Last Update: 2/23/2023</time>
+											<a href="#" class="link">+ ADD TO COLLECTION</a>
+										</div>
+										<ul class="share-list">
+											<li><a href="#"><i class="icon-ico-share"></i></a></li>
+											<li class="active">
+												<a href="#">
+													<i class="icon-ico-star"></i>
+													<i class="icon-ico-fill-star fill"></i>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<div class="collection-box">
+										<img src="images/img53.jpg" alt="image description" class="alignleft">
+										<div class="box">
+											<span class="title">Distant galaxy</span>
+											<span class="reference">LSST 3483498</span>
+											<time datetime="2023-02-23">Last Update: 2/23/2023</time>
+											<a href="#" class="link">+ ADD TO COLLECTION</a>
+										</div>
+										<ul class="share-list">
+											<li><a href="#"><i class="icon-ico-share"></i></a></li>
+											<li class="active">
+												<a href="#">
+													<i class="icon-ico-star"></i>
+													<i class="icon-ico-fill-star fill"></i>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<div class="collection-box">
+										<img src="images/img53.jpg" alt="image description" class="alignleft">
+										<div class="box">
+											<span class="title">Star</span>
+											<span class="reference">LSST 23247934</span>
+											<time datetime="2023-02-23">Last Update: 2/23/2023</time>
+											<a href="#" class="link">+ ADD TO COLLECTION</a>
+										</div>
+										<ul class="share-list">
+											<li><a href="#"><i class="icon-ico-share"></i></a></li>
+											<li class="active">
+												<a href="#">
+													<i class="icon-ico-star"></i>
+													<i class="icon-ico-fill-star fill"></i>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<div class="collection-box">
+										<img src="images/img53.jpg" alt="image description" class="alignleft">
+										<div class="box">
+											<span class="title">Galaxy</span>
+											<span class="reference">LSST 38239823434</span>
+											<time datetime="2023-02-23">Last Update: 2/23/2023</time>
+											<a href="#" class="link">+ ADD TO COLLECTION</a>
+										</div>
+										<ul class="share-list">
+											<li><a href="#"><i class="icon-ico-share"></i></a></li>
+											<li class="active">
+												<a href="#">
+													<i class="icon-ico-star"></i>
+													<i class="icon-ico-fill-star fill"></i>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div id="collection1">
+						<div class="skyviewer-holder jcf-scrollable">
+							<ul class="list">
+								<li>
+									<div class="collection-box add">
+										<ul class="imgs-list">
+											<li><img src="images/img68.jpg" alt="image description"></li>
+											<li><img src="images/img69.jpg" alt="image description"></li>
+											<li><img src="images/img70.jpg" alt="image description"></li>
+											<li><img src="images/img71.jpg" alt="image description"></li>
+										</ul>
+										<div class="box">
+											<span class="title">23 OBJECTS</span>
+											<span class="reference">Large Spiral Galaxies</span>
+											<a href="#" class="link">18 of 23 Objects Updated Today</a>
+										</div>
+										<ul class="share-list">
+											<li><a href="#"><i class="icon-ico-share"></i></a></li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<div class="collection-box add">
+										<ul class="imgs-list">
+											<li><img src="images/img68.jpg" alt="image description"></li>
+											<li><img src="images/img69.jpg" alt="image description"></li>
+											<li><img src="images/img70.jpg" alt="image description"></li>
+											<li><img src="images/img71.jpg" alt="image description"></li>
+										</ul>
+										<div class="box">
+											<span class="title">16 Objects</span>
+											<span class="reference">Stars similar to our sun</span>
+											<a href="#" class="link">4 out of 16 Objects Updated Today</a>
+										</div>
+										<ul class="share-list">
+											<li><a href="#"><i class="icon-ico-share"></i></a></li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<div class="collection-box add">
+										<ul class="imgs-list">
+											<li><img src="images/img68.jpg" alt="image description"></li>
+											<li><img src="images/img69.jpg" alt="image description"></li>
+											<li><img src="images/img70.jpg" alt="image description"></li>
+											<li><img src="images/img71.jpg" alt="image description"></li>
+										</ul>
+										<div class="box">
+											<span class="title">23 OBJECTS</span>
+											<span class="reference">Smallest Asteroids Discoverd This Year</span>
+											<a href="#" class="link">18 of 23 Objects Updated Yesterday</a>
+										</div>
+										<ul class="share-list">
+											<li><a href="#"><i class="icon-ico-share"></i></a></li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<div class="collection-box add">
+										<ul class="imgs-list">
+											<li><img src="images/img68.jpg" alt="image description"></li>
+											<li><img src="images/img69.jpg" alt="image description"></li>
+											<li><img src="images/img70.jpg" alt="image description"></li>
+											<li><img src="images/img71.jpg" alt="image description"></li>
+										</ul>
+										<div class="box">
+											<span class="title">23 OBJECTS</span>
+											<span class="reference">Supernova Examples for Astro Class</span>
+											<a href="#" class="link">18 of 23 Objects Updated Yesterday</a>
+										</div>
+										<ul class="share-list">
+											<li><a href="#"><i class="icon-ico-share"></i></a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div id="history1">
+						<div class="skyviewer-holder jcf-scrollable">
+							<ul class="list">
+								<li>
+									<div class="collection-box">
+										<img src="images/img53.jpg" alt="image description" class="alignleft">
+										<div class="box">
+											<span class="title">Near GALAXY</span>
+											<span class="reference">LSST 38239823434</span>
+											<time datetime="2023-02-23">Last Update: 2/23/2023</time>
+											<a href="#" class="link">+ ADD TO COLLECTION</a>
+										</div>
+										<ul class="share-list">
+											<li><a href="#"><i class="icon-ico-share"></i></a></li>
+											<li>
+												<a href="#">
+													<i class="icon-ico-star"></i>
+													<i class="icon-ico-fill-star fill"></i>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<div class="collection-box">
+										<img src="images/img53.jpg" alt="image description" class="alignleft">
+										<div class="box">
+											<span class="title">Near GALAXY</span>
+											<span class="reference">LSST 2034348</span>
+											<time datetime="2023-02-23">Last Update: 2/23/2023</time>
+											<a href="#" class="link">+ ADD TO COLLECTION</a>
+										</div>
+										<ul class="share-list">
+											<li><a href="#"><i class="icon-ico-share"></i></a></li>
+											<li>
+												<a href="#">
+													<i class="icon-ico-star"></i>
+													<i class="icon-ico-fill-star fill"></i>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<div class="collection-box">
+										<img src="images/img53.jpg" alt="image description" class="alignleft">
+										<div class="box">
+											<span class="title">ASTEROID</span>
+											<span class="reference">LSST 348348</span>
+											<time datetime="2023-02-23">Last Update: 2/23/2023</time>
+											<a href="#" class="link">+ ADD TO COLLECTION</a>
+										</div>
+										<ul class="share-list">
+											<li><a href="#"><i class="icon-ico-share"></i></a></li>
+											<li>
+												<a href="#">
+													<i class="icon-ico-star"></i>
+													<i class="icon-ico-fill-star fill"></i>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<div class="collection-box">
+										<img src="images/img53.jpg" alt="image description" class="alignleft">
+										<div class="box">
+											<span class="title">Red dwarf star</span>
+											<span class="reference">LSST 209349</span>
+											<time datetime="2023-02-23">Last Update: 2/23/2023</time>
+											<a href="#" class="link">+ ADD TO COLLECTION</a>
+										</div>
+										<ul class="share-list">
+											<li><a href="#"><i class="icon-ico-share"></i></a></li>
+											<li>
+												<a href="#">
+													<i class="icon-ico-star"></i>
+													<i class="icon-ico-fill-star fill"></i>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<div class="collection-box">
+										<img src="images/img53.jpg" alt="image description" class="alignleft">
+										<div class="box">
+											<span class="title">Distant galaxy</span>
+											<span class="reference">LSST 3483498</span>
+											<time datetime="2023-02-23">Last Update: 2/23/2023</time>
+											<a href="#" class="link">+ ADD TO COLLECTION</a>
+										</div>
+										<ul class="share-list">
+											<li><a href="#"><i class="icon-ico-share"></i></a></li>
+											<li>
+												<a href="#">
+													<i class="icon-ico-star"></i>
+													<i class="icon-ico-fill-star fill"></i>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<div class="collection-box">
+										<img src="images/img53.jpg" alt="image description" class="alignleft">
+										<div class="box">
+											<span class="title">Star</span>
+											<span class="reference">LSST 23247934</span>
+											<time datetime="2023-02-23">Last Update: 2/23/2023</time>
+											<a href="#" class="link">+ ADD TO COLLECTION</a>
+										</div>
+										<ul class="share-list">
+											<li><a href="#"><i class="icon-ico-share"></i></a></li>
+											<li>
+												<a href="#">
+													<i class="icon-ico-star"></i>
+													<i class="icon-ico-fill-star fill"></i>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<div class="collection-box">
+										<img src="images/img53.jpg" alt="image description" class="alignleft">
+										<div class="box">
+											<span class="title">Galaxy</span>
+											<span class="reference">LSST 38239823434</span>
+											<time datetime="2023-02-23">Last Update: 2/23/2023</time>
+											<a href="#" class="link">+ ADD TO COLLECTION</a>
+										</div>
+										<ul class="share-list">
+											<li><a href="#"><i class="icon-ico-share"></i></a></li>
+											<li>
+												<a href="#">
+													<i class="icon-ico-star"></i>
+													<i class="icon-ico-fill-star fill"></i>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="filter-block filter-star">
+				<header class="skyviewer-head">
+					<a href="#" class="btn-back"><i class="icon-arrow2"></i></a>
+					<span class="info">?</span>
+					<h3>Stars</h3>
+				</header>
+				<div class="holder jcf-scrollable">
+					<div class="filter-box">
+						<div class="row">
+							<a href="#">Reset Filters</a>
+							<a href="#">Unselect All</a>
+						</div>
+						<ul>
+							<li>
+								<input type="checkbox" id="checkbox1">
+								<label for="checkbox1">Protostar</label>
+							</li>
+							<li>
+								<input type="checkbox" id="checkbox2">
+								<label for="checkbox2">TTauri Star</label>
+							</li>
+							<li>
+								<input type="checkbox" id="checkbox3">
+								<label for="checkbox3">Main Sequence Star</label>
+							</li>
+							<li>
+								<input type="checkbox" id="checkbox4">
+								<label for="checkbox4">Red Giant Star</label>
+							</li>
+							<li>
+								<input type="checkbox" id="checkbox5">
+								<label for="checkbox5">Red Dwarf Star</label>
+							</li>
+							<li>
+								<input type="checkbox" id="checkbox6">
+								<label for="checkbox6">Neutron Stars</label>
+							</li>
+							<li>
+								<input type="checkbox" id="checkbox7">
+								<label for="checkbox7">Supergiant Stars</label>
+							</li>
+							<li>
+								<input type="checkbox" id="checkbox8">
+								<label for="checkbox8">Unclassified Stars</label>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="filter-block filter-object">
+				<header class="skyviewer-head">
+					<a href="#" class="btn-back"><i class="icon-arrow2"></i></a>
+					<span class="info">?</span>
+					<h3>Filter Objects</h3>
+				</header>
+				<div class="holder jcf-scrollable">
+					<ul class="tabset-block add-tabset">
+						<li class="active"><a href="#custom1">Custom</a></li>
+						<li><a href="#curated1">curated</a></li>
+						<li><a href="#saved2">saved</a></li>
+					</ul>
+					<div id="custom1">
+						<div class="notification-box">
+							<a href="#" class="btn-close"><i class="icon-icon-close"></i></a>
+							<img src="images/icon.png" alt="image description">
+							<p>Learn more about how LSST selects objects to view in the Skyviewer</p>
+						</div>
+						<div class="txt-area">
+							<h3>Objects in the Sky Viewer</h3>
+							<p>The amount of data LSST captures is truely immense and requires thousands of scientists using the most advanced technologies to sift through it. We, unfortunately, can’t bring every bit of data to your phone, so LSST has curated a set of some of the most notable and intersting objects LSST scientists are observing. </p>
+						</div>
+						<ul>
+							<li>
+								<input type="checkbox" id="checkbox9">
+								<label for="checkbox9">Objects On</label>
+							</li>
+						</ul>
+						<div class="filter-box">
+							<div class="row">
+								<a href="#">Reset Filters</a>
+								<a href="#">Unselect All</a>
+							</div>
+							<ul>
+								<li>
+									<input type="checkbox" id="checkbox10">
+									<label for="checkbox10">Stars(12,303)</label>
+								</li>
+								<li>
+									<input type="checkbox" id="checkbox11">
+									<label for="checkbox11">Near By Galaxies (6,040)</label>
+								</li>
+								<li>
+									<input type="checkbox" id="checkbox12">
+									<label for="checkbox12">Distant Galaxies (8,394)</label>
+								</li>
+								<li>
+									<input type="checkbox" id="checkbox13">
+									<label for="checkbox13">Supernovae (1,1203)</label>
+								</li>
+								<li>
+									<input type="checkbox" id="checkbox14">
+									<label for="checkbox14">Asteroids (3,220)</label>
+								</li>
+								<li>
+									<input type="checkbox" id="checkbox15">
+									<label for="checkbox15">Unknown objects (303)</label>
+								</li>
+							</ul>
+							<a href="#" class="link-save">Save Filter Selection</a>
+						</div>
+					</div>
+					<div id="curated1"></div>
+					<div id="saved2"></div>
+				</div>
+			</div>
+			<div class="skyviewer-aside">
+				<div class="skyviewer-header">
+					<a href="#" class="btn-back"><i class="icon-arrow2"></i></a>
+					<h3><span>Nearby Galaxy </span>LSST 2934983</h3>
+					<ul class="share-list">
+						<li><a href="#"><i class="icon-ico-share"></i></a></li>
+						<li>
+							<a href="#">
+								<i class="icon-ico-star"></i>
+								<i class="icon-ico-fill-star fill"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<ul class="tabset-block">
+					<li><a href="#overview1">overview</a></li>
+					<li class="active"><a href="#detailed1">detailed data</a></li>
+				</ul>
+				<div class="tab-container jcf-scrollable">
+					<div id="overview1">
+						<span class="updated"><strong>Updated:</strong> Yesterday at 3:30 am UTC</span>
+						<div class="video-area">
+							<div class="video">
+								<img src="images/img72.jpg" alt="image descriptin">
+								<time datetime="2023-07-13">July 13, 2023 - 3:30am UTC</time>
+								<span class="info">i</span>
+								<span class="button-play">
+									<a href="#" class="btn-play"><i class="icon-play"></i> PLAY ANIMATION</a>
+								</span>
+							</div>
+							<div class="meta">
+								<a href="#" class="btn-history"><i class="icon-replay"></i> IMAGE HISTORY</a>
+								<a href="#" class="btn-download"><i class="icon-download"></i> DOWNLOAD</a>
+								<a href="#" class="btn-dot">...</a>
+							</div>
+						</div>
+						<div class="text-block">
+							<p>A few sentences about what makes this object very interesting. This would be the same text a user would see if they were browsing through the object tours. </p>
+							<a href="#" class="link">+ VIEW OTHER OBJECTS LIKE THIS</a>
+						</div>
+						<ul class="similar-article">
+							<li>
+								<a href="#" class="link">+ Compare</a>
+								<span class="title">OBJECT TYPE</span>
+								<h3>Spiral Galaxy</h3>
+							</li>
+							<li>
+								<a href="#" class="link">+ VIEW IN 3D</a>
+								<span class="title">DISTANCE</span>
+								<h3>13.05 Million Light Years</h3>
+								<p>It would take 300 billion years to get here with modern spacecraft</p>
+							</li>
+							<li>
+								<a href="#" class="link">+ COMPARE</a>
+								<span class="title">SCALE</span>
+								<h3>This galaxy is 3.5 times larger than the Milky Way</h3>
+							</li>
+							<li>
+								<a href="#" class="link">+ View in 3D</a>
+								<span class="title">UNIQUE CHARACTERISTICS</span>
+								<h3>The center of the galaxy contains a supermassive black hole</h3>
+							</li>
+						</ul>
+					</div>
+					<div id="detailed1">
+						<div class="notification-box">
+							<a href="#" class="btn-close"><i class="icon-icon-close"></i></a>
+							<span class="telescope"></span>
+							<p>Learn more about how LSST selects objects to view in the Skyviewer</p>
+						</div>
+						<div class="project-box">
+							<div class="project-holder">
+								<img src="images/img73.jpg" alt="image description" class="alignleft">
+								<ul class="detail-list">
+									<li>
+										<span class="title">Type</span>
+										<span class="name">Galaxy, Spiral</span>
+									</li>
+									<li>
+										<span class="title">Object ID</span>
+										<span class="name">1237680332170133581</span>
+									</li>
+								</ul>
+							</div>
+							<ul class="detail-list add">
+								<li>
+									<span class="title">Decimal (DEC)</span>
+									<span class="name">146.70633724,16.042850</span>
+								</li>
+								<li>
+									<span class="title">Hexagesimal (RA)</span>
+									<span class="name">09:46:49.52,+16:16:02:34.26</span>
+								</li>
+							</ul>
+						</div>
+						<div class="diagram-block">
+							<header class="header-top">
+								<a href="#" class="info">?</a>
+								<h3>Diagram</h3>
+							</header>
+							<div class="diagram">
+								<img src="images/img74.jpg" alt="image description">
+							</div>
+						</div>
+						<div class="detail-area">
+							<header class="header-top">
+								<a href="#" class="info">?</a>
+								<h3>Color filters</h3>
+							</header>
+							<ul class="detail-list">
+								<li>
+									<span class="title">Ultraviolet (u)</span>
+									<span class="name">17.71</span>
+									<div class="tooltip-box">
+										<i class="icon-icon-close"></i>
+										<span class="heading">Ultraviolet (u)</span>
+										<p>The U filter stands for ultraviolet, and it allows light of wavelengths between about 350 nanometers (nm) and 400 nm to pass through. Thus, the U band is about 100 nm wide.</p>
+										<div class="bottom">
+											<a href="#">+ LEARN MORE ABOUT LSST FILTERS</a>
+										</div>
+									</div>
+								</li>
+								<li>
+									<span class="title">green (g)</span>
+									<span class="name">14.00</span>
+								</li>
+								<li>
+									<span class="title">Red</span>
+									<span class="name">13.19</span>
+								</li>
+								<li>
+									<span class="title">Near Infrared (i)</span>
+									<span class="name">122.4 d</span>
+								</li>
+								<li>
+									<span class="title">Infrared (z)</span>
+									<span class="name">13.10</span>
+								</li>
+								<li>
+									<span class="title">Yellow (y)</span>
+									<span class="name">12.5</span>
+								</li>
+							</ul>
+						</div>
+						<div class="detail-area">
+							<header class="header-top">
+								<a href="#" class="info">?</a>
+								<h3>Cross-identifications</h3>
+							</header>
+							<strong class="txt">Source 1</strong>
+							<ul class="detail-list">
+								<li>
+									<span class="title">Catalog</span>
+									<span class="name">LSST</span>
+								</li>
+								<li>
+									<span class="title">Name 1</span>
+									<span class="name">-</span>
+								</li>
+								<li>
+									<span class="title">Name 2</span>
+									<span class="name">-</span>
+								</li>
+								<li>
+									<span class="title">Name 3</span>
+									<span class="name">-</span>
+								</li>
+							</ul>
+							<strong class="txt">Source 2</strong>
+							<ul class="detail-list">
+								<li>
+									<span class="title">Catalog</span>
+									<span class="name">2MASS</span>
+								</li>
+								<li>
+									<span class="title">j</span>
+									<span class="name">13.896</span>
+								</li>
+								<li>
+									<span class="title">h</span>
+									<span class="name">13.464</span>
+								</li>
+								<li>
+									<span class="title">k</span>
+									<span class="name">13.41</span>
+								</li>
+								<li>
+									<span class="title">phQual</span>
+									<span class="name">AAA</span>
+								</li>
+							</ul>
+						</div>
+						<div class="detail-area">
+							<header class="header-top">
+								<a href="#" class="info">?</a>
+								<h3>flux & magnitude</h3>
+							</header>
+							<ul class="detail-list">
+								<li>
+									<span class="title">FiberMag_r</span>
+									<span class="name">15.53</span>
+								</li>
+								<li>
+									<span class="title">PetroMag_r</span>
+									<span class="name">15.28</span>
+								</li>
+								<li>
+									<span class="title">DevMag_r</span>
+									<span class="name">15.21</span>
+								</li>
+								<li>
+									<span class="title">ExMag_r</span>
+									<span class="name">15.21</span>
+								</li>
+								<li>
+									<span class="title">PsfMag_r</span>
+									<span class="name">15.12</span>
+								</li>
+								<li>
+									<span class="title">ModelMag_r</span>
+									<span class="name">15.14</span>
+								</li>
+							</ul>
+						</div>
+						<div class="detail-area">
+							<header class="header-top">
+								<a href="#" class="info">?</a>
+								<h3>Scan information</h3>
+							</header>
+							<ul class="detail-list">
+								<li>
+									<span class="title">Run</span>
+									<span class="name">8116</span>
+								</li>
+								<li>
+									<span class="title">Rerun</span>
+									<span class="name">301</span>
+								</li>
+								<li>
+									<span class="title">Camcol</span>
+									<span class="name">3</span>
+								</li>
+								<li>
+									<span class="title">Field</span>
+									<span class="name">125</span>
+								</li>
+								<li>
+									<span class="title">Obj</span>
+									<span class="name">77</span>
+								</li>
+								<li>
+									<span class="title">Rowc</span>
+									<span class="name">584.6</span>
+								</li>
+								<li>
+									<span class="title">Calc</span>
+									<span class="name">260.5</span>
+								</li>
+							</ul>
+						</div>
+						<div class="detail-area">
+							<header class="header-top">
+								<a href="#" class="info">?</a>
+								<h3>Object classification</h3>
+							</header>
+							<ul class="detail-list">
+								<li>
+									<span class="title">Extinction_r</span>
+									<span class="name">0.4</span>
+								</li>
+								<li>
+									<span class="title">PetroRad_r</span>
+									<span class="name">1.110</span>
+								</li>
+								<li>
+									<span class="title">nChild</span>
+									<span class="name">122.4 d</span>
+								</li>
+								<li class="add">
+									<span class="title">Parent ID</span>
+									<span class="name">1237680332170133579</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

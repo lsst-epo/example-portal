@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>LSST</title>
+	<link media="all" rel="stylesheet" href="css/main.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" defer></script>
+	<script>window.jQuery || document.write('<script src="js/jquery-3.2.1.min.js" defer><\/script>')</script>
+	<script src="js/jquery.main.js" defer></script>
+</head>
+<body>
+	<div id="wrapper">
+		<header id="header">
+			<div class="holder">
+				<a href="index.html" class="logo"><img src="images/logo.svg" alt="LSST"></a>
+				<div class="right">
+					<ul class="lang">
+						<li class="active"><a href="#">English</a></li>
+						<li><a href="#">Español</a></li>
+					</ul>
+					<a href="#" class="btn-logout">Log Out <i class="icon-ico-man"></i></a>
+				</div>
+				<nav id="nav">
+					<ul>
+						<li class="active"><a href="index.html"><span><i class="icon-ico-new"></i></span> NEW</a></li>
+						<li class="hide"><a href="data.html"><span><i class="icon-data"></i></span> DATA</a></li>
+						<li>
+							<a href="skyviewer.html"><span><i class="icon-ico-skyviewer"></i></span> SKYVIEWER</a>
+							<div class="dropdown add2">
+								<a href="#" class="btn-full"><i class="icon-ico-fullscreen"></i> FULL SCREEN</a>
+								<div class="drop-holder">
+									<ul>
+										<li><a href="#"><i class="icon-binoculars"></i> Happening Now</a></li>
+										<li><a href="#"><i class="icon-tours"></i> Celestial Tours</a></li>
+										<li><a href="#"><i class="icon-filter"></i> Filter Objects</a></li>
+										<li><a href="#"><i class="icon-stars1"></i> Your Objects</a></li>
+										<li><a href="#"><i class="icon-info2"></i> Info</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="article.html"><span><i class="icon-ico-discovery"></i></span> DISCOVERIES</a>
+							<div class="dropdown">
+								<div class="drop-holder">
+									<ul>
+										<li><a href="solarsystem.html">Solar System</a></li>
+										<li><a href="changingcosmos.html">Changing Cosmos</a></li>
+										<li><a href="galaxies.html">Galaxies</a></li>
+										<li><a href="theuniverse.html">The Universe</a></li>
+										<li><a href="technology.html">Technology</a></li>
+										<li><a href="projects.html">Join the Research</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="hide">
+							<a href="education.html"><span><i class="icon-ico-education"></i></span> EDUCATORS</a>
+							<div class="dropdown">
+								<div class="drop-holder">
+									<ul>
+										<li><a href="#">Activities</a></li>
+										<li><a href="#">Professional Development</a></li>
+										<li><a href="#">Tutorials</a></li>
+										<li><a href="#">Astronomy Dictionary</a></li>
+										<li><a href="#">Online Forum</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li><a href="gallery.html"><span><i class="icon-ico-gallery"></i></span> GALLERY</a></li>
+						<li>
+							<a href="collections.html"><span><i class="icon-ico-collection"></i></span> COLLECTIONS</a>
+							<div class="dropdown add">
+								<div class="drop-holder">
+									<ul class="icons-list">
+										<li><a href="#"><i class="icon-setting"></i></a></li>
+										<li><a href="#"><i class="icon-icon-filter"></i></a></li>
+										<li><a href="#"><i class="icon-icon-search"></i></a></li>
+									</ul>
+									<ul>
+										<li class="active"><a href="#">My Collection</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<header class="header-top">
+			<div class="top">
+				<a href="#" class="logo"><img src="images/logo2.png" alt="LSST"></a>
+				<a href="#" class="setting"><i class="icon-setting"></i></a>
+			</div>
+			<nav class="add-nav">
+				<ul>
+					<li class="active"><a href="#">NEWS</a></li>
+					<li><a href="#">DATA</a></li>
+					<li><a href="#">LOREM</a></li>
+				</ul>
+			</nav>
+		</header>
+		<div class="alert-area">
+			<div class="holder">
+				<div class="header-top">
+					<strong class="title">Alert Stream</strong>
+					<p>Candidates Found Last Night</p>
+				</div>
+				<div class="col">
+					<strong class="title">Alert Stream</strong>
+					<p>Candidates Found Last Night</p>
+					<ul class="alerts">
+						<li><i class="icon-icon-status"></i> Status: <time>July 23, 2018</time></li>
+						<li><i class="icon-icon-alerts"></i> Alerts Issued Last Night: <span>10 million</span></li>
+						<li><i class="icon-icon-terabytes"></i> Terabytes of data collected: <span>5,625</span></li>
+						<li><i class="icon-icon-camera"></i> Next Image Catalog Release: <span>355 days</span></li>
+					</ul>
+				</div>
+				<ul class="alert-list">
+					<li>
+						<span class="heading">ASTEROIDS</span>
+						<span class="price">1154</span>
+						<span class="total">Total to Date</span>
+						<span class="total-price">602,700</span>
+						<i class="icon-ico-rectangle"></i>
+					</li>
+					<li>
+						<span class="heading">SUPernovae</span>
+						<span class="price">22016</span>
+						<span class="total">Total to Date</span>
+						<span class="total-price">602,700</span>
+						<i class="icon-ico-rectangle"></i>
+					</li>
+					<li>
+						<span class="heading">leasing events</span>
+						<span class="price">363</span>
+						<span class="total">Total to Date</span>
+						<span class="total-price">602,700</span>
+						<i class="icon-ico-rectangle"></i>
+					</li>
+					<li>
+						<span class="heading">Transneptunian objects</span>
+						<span class="price">03</span>
+						<span class="total">Total to Date</span>
+						<span class="total-price">602,700</span>
+						<i class="icon-ico-rectangle"></i>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<section class="hero-area hero-add">
+			<div class="holder">
+				<div class="text-box">
+					<h1>Welcome to the Future of Astronomy</h1>
+					<p>The Large Synoptic Survey Telescope (LSST) is a new astronomical telescope based in Chile. Every three nights it images the entire southern night sky and will continue to do this for ten years. LSST is currently observing millions of objects per night, creating one of the largest data sets ever produced. It also tracks how objects change over time — from exploding stars to asteroids orbiting near earth. By rapidly photographing the night sky over this time, LSST is helping to answer questions ranging from the formation of our Solar System to the fundamental matter and energy components of the Universe. </p>
+				</div>
+				<div class="video-block">
+					<a href="#" class="btn-play"><i class="icon-ico-play"></i></a>
+				</div>
+			</div>
+		</section>
+		<main id="main">
+			<section class="area">
+				<header class="header">
+					<ul class="filters">
+						<li><a href="#"><i class="icon-icon-filter"></i></a></li>
+						<li><a href="#"><i class="icon-icon-search"></i></a></li>
+					</ul>
+					<h2>What’s New</h2>
+				</header>
+				<div class="tab-area">
+					<ul class="tabset">
+						<li class="active"><a href="#tab1">ALL</a></li>
+						<li><a href="#tab2">NEWS</a></li>
+						<li><a href="#tab3">EVENTS</a></li>
+						<li><a href="#tab4">DISCOVERIES</a></li>
+						<li><a href="#tab5">PROJECTS</a></li>
+						<li><a href="#tab6">SOCIAL MEDIA</a></li>
+					</ul>
+					<div class="tab-content">
+						<div id="tab1" class="tab-block">
+							<div class="holder">
+								<article class="box-frame recent-post pink">
+									<a href="#" class="btn-close"><span class="icon-icon-close"></span></a>
+									<i class="icon-icon-discovery2"></i>
+									<h2>Hello</h2>
+									<p>The LSST Education and Public Outreach program has created this website to reach all sorts of people interested in astronomy, big data and our super amazing cutting edge telescope. It is our hope to encourage your deepening engagement with the data LSST collects and involve you in the research process by providing opportunities to learn, share and participate in scientific discovery.</p>
+								</article>
+								<article class="recent-post box-frame">
+									<header class="head">
+										<ul class="share">
+											<li><a href="#"><i class="icon-ico-share"></i></a></li>
+											<li>
+												<a href="#">
+													<i class="icon-ico-star"></i>
+													<i class="icon-ico-fill-star fill"></i>
+												</a>
+											</li>
+										</ul>
+										<span class="name">GALAXY DISCOVERY</span>
+									</header>
+									<h3><a href="#">Black Holes + Host Galaxies</a></h3>
+									<div class="holder">
+										<img src="images/img.jpg" alt="image description" class="alignleft">
+										<div class="txt-box">
+											<p>A team of astronomers has taken a close look at a nearby galaxy — and discovered an unusual structure that sheds light on supermassive black holes’ relationships with their host galaxies</p>
+										</div>
+									</div>
+									<time datetime="06-13-2018">June 13, 2018</time>
+								</article>
+								<article class="recent-post box-frame">
+									<header class="head">
+										<ul class="share">
+											<li><a href="#"><i class="icon-ico-share"></i></a></li>
+											<li class="active">
+												<a href="#">
+													<i class="icon-ico-star"></i>
+													<i class="icon-ico-fill-star fill"></i>
+												</a>
+											</li>
+										</ul>
+										<span class="name">GALAXIES & THE MILKY WAY</span>
+									</header>
+									<h3><a href="#">The Future of <br>Planetary Defense</a></h3>
+									<div class="holder">
+										<img src="images/img2.jpg" alt="image description" class="alignleft">
+										<div class="txt-box">
+											<p>Bryce T. Bolin and Ed Lu of the B612 Asteroid Institute discuss the problems in planetary defense from asteroids and the value of survey astronomy</p>
+										</div>
+									</div>
+									<div class="calender-box">
+										<i class="icon-icon-date"></i>
+										<span class="txt">Webcast <span>EVENT: <time datetime="2018-09-14">September 14, 2018 4pm GMT</time>.</span></span>
+									</div>
+								</article>
+								<article class="recent-post box-frame">
+									<header class="head">
+										<ul class="share">
+											<li><a href="#"><i class="icon-ico-share"></i></a></li>
+											<li class="active">
+												<a href="#">
+													<i class="icon-ico-star"></i>
+													<i class="icon-ico-fill-star fill"></i>
+												</a>
+											</li>
+										</ul>
+										<span class="name">TWITTER</span>
+									</header>
+									<h3><a href="#">@astromolly</a></h3>
+									<div class="holder">
+										<div class="txt-box">
+											<p>Scolnic on how many supernovae <a href="#">#LSST</a> will find: it's absurd! <a href="#">#astro2020s</a></p>
+											<img src="images/img3.jpg" alt="image description" class="img">
+										</div>
+									</div>
+									<time datetime="2018-07-23">July 23, 2018</time>
+								</article>
+								<article class="recent-post box-frame">
+									<header class="head">
+										<ul class="share">
+											<li><a href="#"><i class="icon-ico-share"></i></a></li>
+											<li class="active">
+												<a href="#">
+													<i class="icon-ico-star"></i>
+													<i class="icon-ico-fill-star fill"></i>
+												</a>
+											</li>
+										</ul>
+										<span class="name">LSST TECHNOLOGY</span>
+									</header>
+									<h3><a href="#">Brookhaven Builds <br>Digital Film</a></h3>
+									<div class="holder">
+										<img src="images/img4.jpg" alt="image description" class="alignleft">
+										<div class="txt-box">
+											<p>Brookhaven Lab leads the development of the sensors for the LSST, the array of precise and sensitive electronics that capture images within the digital camera.</p>
+										</div>
+									</div>
+									<time datetime="2018-07-23">July 23, 2018</time>
+								</article>
+								<article class="recent-post box-frame">
+									<header class="head">
+										<ul class="share">
+											<li><a href="#"><i class="icon-ico-share"></i></a></li>
+											<li class="active">
+												<a href="#">
+													<i class="icon-ico-star"></i>
+													<i class="icon-ico-fill-star fill"></i>
+												</a>
+											</li>
+										</ul>
+										<span class="name">CNN SPACE CENTER</span>
+									</header>
+									<h3><a href="#">‘The Universe is slowly dying,’ study shows with unprecedented precision</a></h3>
+									<div class="holder">
+										<img src="images/img5.jpg" alt="image description" class="alignleft">
+										<div class="txt-box">
+											<p>Brookhaven Lab leads the development of the sensors for the LSST, the array of precise and sensitive electronics that capture images within the digital camera.</p>
+										</div>
+									</div>
+									<img src="images/logo-cnn.jpg" alt="cnn" class="image">
+								</article>
+							</div>
+							<span class="button">
+								<a href="#" class="btn-load">LOADING MORE MEDIA <i class="icon-ico-loadmore"></i></a>
+							</span>
+						</div>
+						<div id="tab2" class="tab-block">
+							<div class="holder">
+								<article class="recent-post box-frame">
+									<header class="head">
+										<ul class="share">
+											<li><a href="#"><i class="icon-ico-share"></i></a></li>
+											<li>
+												<a href="#">
+													<i class="icon-ico-star"></i>
+													<i class="icon-ico-fill-star fill"></i>
+												</a>
+											</li>
+										</ul>
+										<span class="name">GALAXY DISCOVERY</span>
+									</header>
+									<h3><a href="#">Black Holes + Host Galaxies</a></h3>
+									<div class="holder">
+										<img src="images/img.jpg" alt="image description" class="alignleft">
+										<div class="txt-box">
+											<p>A team of astronomers has taken a close look at a nearby galaxy — and discovered an unusual structure that sheds light on supermassive black holes’ relationships with their host galaxies</p>
+										</div>
+									</div>
+									<time datetime="06-13-2018">June 13, 2018</time>
+								</article>
+								<article class="recent-post box-frame">
+									<header class="head">
+										<ul class="share">
+											<li><a href="#"><i class="icon-ico-share"></i></a></li>
+											<li class="active">
+												<a href="#">
+													<i class="icon-ico-star"></i>
+													<i class="icon-ico-fill-star fill"></i>
+												</a>
+											</li>
+										</ul>
+										<span class="name">GALAXIES & THE MILKY WAY</span>
+									</header>
+									<h3><a href="#">The Future of <br>Planetary Defense</a></h3>
+									<div class="holder">
+										<img src="images/img2.jpg" alt="image description" class="alignleft">
+										<div class="txt-box">
+											<p>Bryce T. Bolin and Ed Lu of the B612 Asteroid Institute discuss the problems in planetary defense from asteroids and the value of survey astronomy</p>
+										</div>
+									</div>
+									<div class="calender-box">
+										<i class="icon-icon-date"></i>
+										<span class="txt">Webcast <span>EVENT: <time datetime="2018-09-14">September 14, 2018 4pm GMT</time>.</span></span>
+									</div>
+								</article>
+								<article class="recent-post box-frame">
+									<header class="head">
+										<ul class="share">
+											<li><a href="#"><i class="icon-ico-share"></i></a></li>
+											<li class="active">
+												<a href="#">
+													<i class="icon-ico-star"></i>
+													<i class="icon-ico-fill-star fill"></i>
+												</a>
+											</li>
+										</ul>
+										<span class="name">TWITTER</span>
+									</header>
+									<h3><a href="#">@astromolly</a></h3>
+									<div class="holder">
+										<div class="txt-box">
+											<p>Scolnic on how many supernovae <a href="#">#LSST</a> will find: it's absurd! <a href="#">#astro2020s</a></p>
+											<img src="images/img3.jpg" alt="image description" class="img">
+										</div>
+									</div>
+									<time datetime="2018-07-23">July 23, 2018</time>
+								</article>
+								<article class="recent-post box-frame">
+									<header class="head">
+										<ul class="share">
+											<li><a href="#"><i class="icon-ico-share"></i></a></li>
+											<li class="active">
+												<a href="#">
+													<i class="icon-ico-star"></i>
+													<i class="icon-ico-fill-star fill"></i>
+												</a>
+											</li>
+										</ul>
+										<span class="name">LSST TECHNOLOGY</span>
+									</header>
+									<h3><a href="#">Brookhaven Builds <br>Digital Film</a></h3>
+									<div class="holder">
+										<img src="images/img4.jpg" alt="image description" class="alignleft">
+										<div class="txt-box">
+											<p>Brookhaven Lab leads the development of the sensors for the LSST, the array of precise and sensitive electronics that capture images within the digital camera.</p>
+										</div>
+									</div>
+									<time datetime="2018-07-23">July 23, 2018</time>
+								</article>
+								<article class="recent-post box-frame">
+									<header class="head">
+										<ul class="share">
+											<li><a href="#"><i class="icon-ico-share"></i></a></li>
+											<li class="active">
+												<a href="#">
+													<i class="icon-ico-star"></i>
+													<i class="icon-ico-fill-star fill"></i>
+												</a>
+											</li>
+										</ul>
+										<span class="name">CNN SPACE CENTER</span>
+									</header>
+									<h3><a href="#">‘The Universe is slowly dying,’ study shows with unprecedented precision</a></h3>
+									<div class="holder">
+										<img src="images/img5.jpg" alt="image description" class="alignleft">
+										<div class="txt-box">
+											<p>Brookhaven Lab leads the development of the sensors for the LSST, the array of precise and sensitive electronics that capture images within the digital camera.</p>
+										</div>
+									</div>
+									<img src="images/logo-cnn.jpg" alt="cnn" class="image">
+								</article>
+							</div>
+							<span class="button">
+								<a href="#" class="btn-load">LOADING MORE MEDIA <i class="icon-ico-loadmore"></i></a>
+							</span>
+						</div>
+						<div id="tab3" class="tab-block">
+							<div class="holder">
+								<article class="box-frame recent-post pink">
+									<a href="#" class="btn-close"><span class="icon-icon-close"></span></a>
+									<i class="icon-icon-discovery2"></i>
+									<h2>Hello</h2>
+									<p>The LSST Education and Public Outreach program has created this website to reach all sorts of people interested in astronomy, big data and our super amazing cutting edge telescope. It is our hope to encourage your deepening engagement with the data LSST collects and involve you in the research process by providing opportunities to learn, share and participate in scientific discovery.</p>
+								</article>
+								<article class="recent-post box-frame">
+									<header class="head">
+										<ul class="share">
+											<li><a href="#"><i class="icon-ico-share"></i></a></li>
+											<li>
+												<a href="#">
+													<i class="icon-ico-star"></i>
+													<i class="icon-ico-fill-star fill"></i>
+												</a>
+											</li>
+										</ul>
+										<span class="name">GALAXY DISCOVERY</span>
+									</header>
+									<h3><a href="#">Black Holes + Host Galaxies</a></h3>
+									<div class="holder">
+										<img src="images/img.jpg" alt="image description" class="alignleft">
+										<div class="txt-box">
+											<p>A team of astronomers has taken a close look at a nearby galaxy — and discovered an unusual structure that sheds light on supermassive black holes’ relationships with their host galaxies</p>
+										</div>
+									</div>
+									<time datetime="06-13-2018">June 13, 2018</time>
+								</article>
+								<article class="recent-post box-frame">
+									<header class="head">
+										<ul class="share">
+											<li><a href="#"><i class="icon-ico-share"></i></a></li>
+											<li class="active">
+												<a href="#">
+													<i class="icon-ico-star"></i>
+													<i class="icon-ico-fill-star fill"></i>
+												</a>
+											</li>
+										</ul>
+										<span class="name">GALAXIES & THE MILKY WAY</span>
+									</header>
+									<h3><a href="#">The Future of <br>Planetary Defense</a></h3>
+									<div class="holder">
+										<img src="images/img2.jpg" alt="image description" class="alignleft">
+										<div class="txt-box">
+											<p>Bryce T. Bolin and Ed Lu of the B612 Asteroid Institute discuss the problems in planetary defense from asteroids and the value of survey astronomy</p>
+										</div>
+									</div>
+									<div class="calender-box">
+										<i class="icon-icon-date"></i>
+										<span class="txt">Webcast <span>EVENT: <time datetime="2018-09-14">September 14, 2018 4pm GMT</time>.</span></span>
+									</div>
+								</article>
+								<article class="recent-post box-frame">
+									<header class="head">
+										<ul class="share">
+											<li><a href="#"><i class="icon-ico-share"></i></a></li>
+											<li class="active">
+												<a href="#">
+													<i class="icon-ico-star"></i>
+													<i class="icon-ico-fill-star fill"></i>
+												</a>
+											</li>
+										</ul>
+										<span class="name">TWITTER</span>
+									</header>
+									<h3><a href="#">@astromolly</a></h3>
+									<div class="holder">
+										<div class="txt-box">
+											<p>Scolnic on how many supernovae <a href="#">#LSST</a> will find: it's absurd! <a href="#">#astro2020s</a></p>
+											<img src="images/img3.jpg" alt="image description" class="img">
+										</div>
+									</div>
+									<time datetime="2018-07-23">July 23, 2018</time>
+								</article>
+								<article class="recent-post box-frame">
+									<header class="head">
+										<ul class="share">
+											<li><a href="#"><i class="icon-ico-share"></i></a></li>
+											<li class="active">
+												<a href="#">
+													<i class="icon-ico-star"></i>
+													<i class="icon-ico-fill-star fill"></i>
+												</a>
+											</li>
+										</ul>
+										<span class="name">LSST TECHNOLOGY</span>
+									</header>
+									<h3><a href="#">Brookhaven Builds <br>Digital Film</a></h3>
+									<div class="holder">
+										<img src="images/img4.jpg" alt="image description" class="alignleft">
+										<div class="txt-box">
+											<p>Brookhaven Lab leads the development of the sensors for the LSST, the array of precise and sensitive electronics that capture images within the digital camera.</p>
+										</div>
+									</div>
+									<time datetime="2018-07-23">July 23, 2018</time>
+								</article>
+								<article class="recent-post box-frame">
+									<header class="head">
+										<ul class="share">
+											<li><a href="#"><i class="icon-ico-share"></i></a></li>
+											<li class="active">
+												<a href="#">
+													<i class="icon-ico-star"></i>
+													<i class="icon-ico-fill-star fill"></i>
+												</a>
+											</li>
+										</ul>
+										<span class="name">CNN SPACE CENTER</span>
+									</header>
+									<h3><a href="#">‘The Universe is slowly dying,’ study shows with unprecedented precision</a></h3>
+									<div class="holder">
+										<img src="images/img5.jpg" alt="image description" class="alignleft">
+										<div class="txt-box">
+											<p>Brookhaven Lab leads the development of the sensors for the LSST, the array of precise and sensitive electronics that capture images within the digital camera.</p>
+										</div>
+									</div>
+									<img src="images/logo-cnn.jpg" alt="cnn" class="image">
+								</article>
+							</div>
+							<span class="button">
+								<a href="#" class="btn-load">LOADING MORE MEDIA <i class="icon-ico-loadmore"></i></a>
+							</span>
+						</div>
+						<div id="tab4" class="tab-block">
+							<div class="holder">
+								<article class="recent-post box-frame">
+									<header class="head">
+										<ul class="share">
+											<li><a href="#"><i class="icon-ico-share"></i></a></li>
+											<li>
+												<a href="#">
+													<i class="icon-ico-star"></i>
+													<i class="icon-ico-fill-star fill"></i>
+												</a>
+											</li>
+										</ul>
+										<span class="name">GALAXY DISCOVERY</span>
+									</header>
+									<h3><a href="#">Black Holes + Host Galaxies</a></h3>
+									<div class="holder">
+										<img src="images/img.jpg" alt="image description" class="alignleft">
+										<div class="txt-box">
+											<p>A team of astronomers has taken a close look at a nearby galaxy — and discovered an unusual structure that sheds light on supermassive black holes’ relationships with their host galaxies</p>
+										</div>
+									</div>
+									<time datetime="06-13-2018">June 13, 2018</time>
+								</article>
+								<article class="recent-post box-frame">
+									<header class="head">
+										<ul class="share">
+											<li><a href="#"><i class="icon-ico-share"></i></a></li>
+											<li class="active">
+												<a href="#">
+													<i class="icon-ico-star"></i>
+													<i class="icon-ico-fill-star fill"></i>
+												</a>
+											</li>
+										</ul>
+										<span class="name">GALAXIES & THE MILKY WAY</span>
+									</header>
+									<h3><a href="#">The Future of <br>Planetary Defense</a></h3>
+									<div class="holder">
+										<img src="images/img2.jpg" alt="image description" class="alignleft">
+										<div class="txt-box">
+											<p>Bryce T. Bolin and Ed Lu of the B612 Asteroid Institute discuss the problems in planetary defense from asteroids and the value of survey astronomy</p>
+										</div>
+									</div>
+									<div class="calender-box">
+										<i class="icon-icon-date"></i>
+										<span class="txt">Webcast <span>EVENT: <time datetime="2018-09-14">September 14, 2018 4pm GMT</time>.</span></span>
+									</div>
+								</article>
+								<article class="recent-post box-frame">
+									<header class="head">
+										<ul class="share">
+											<li><a href="#"><i class="icon-ico-share"></i></a></li>
+											<li class="active">
+												<a href="#">
+													<i class="icon-ico-star"></i>
+													<i class="icon-ico-fill-star fill"></i>
+												</a>
+											</li>
+										</ul>
+										<span class="name">TWITTER</span>
+									</header>
+									<h3><a href="#">@astromolly</a></h3>
+									<div class="holder">
+										<div class="txt-box">
+											<p>Scolnic on how many supernovae <a href="#">#LSST</a> will find: it's absurd! <a href="#">#astro2020s</a></p>
+											<img src="images/img3.jpg" alt="image description" class="img">
+										</div>
+									</div>
+									<time datetime="2018-07-23">July 23, 2018</time>
+								</article>
+								<article class="recent-post box-frame">
+									<header class="head">
+										<ul class="share">
+											<li><a href="#"><i class="icon-ico-share"></i></a></li>
+											<li class="active">
+												<a href="#">
+													<i class="icon-ico-star"></i>
+													<i class="icon-ico-fill-star fill"></i>
+												</a>
+											</li>
+										</ul>
+										<span class="name">LSST TECHNOLOGY</span>
+									</header>
+									<h3><a href="#">Brookhaven Builds <br>Digital Film</a></h3>
+									<div class="holder">
+										<img src="images/img4.jpg" alt="image description" class="alignleft">
+										<div class="txt-box">
+											<p>Brookhaven Lab leads the development of the sensors for the LSST, the array of precise and sensitive electronics that capture images within the digital camera.</p>
+										</div>
+									</div>
+									<time datetime="2018-07-23">July 23, 2018</time>
+								</article>
+								<article class="recent-post box-frame">
+									<header class="head">
+										<ul class="share">
+											<li><a href="#"><i class="icon-ico-share"></i></a></li>
+											<li class="active">
+												<a href="#">
+													<i class="icon-ico-star"></i>
+													<i class="icon-ico-fill-star fill"></i>
+												</a>
+											</li>
+										</ul>
+										<span class="name">CNN SPACE CENTER</span>
+									</header>
+									<h3><a href="#">‘The Universe is slowly dying,’ study shows with unprecedented precision</a></h3>
+									<div class="holder">
+										<img src="images/img5.jpg" alt="image description" class="alignleft">
+										<div class="txt-box">
+											<p>Brookhaven Lab leads the development of the sensors for the LSST, the array of precise and sensitive electronics that capture images within the digital camera.</p>
+										</div>
+									</div>
+									<img src="images/logo-cnn.jpg" alt="cnn" class="image">
+								</article>
+							</div>
+							<span class="button">
+								<a href="#" class="btn-load">LOADING MORE MEDIA <i class="icon-ico-loadmore"></i></a>
+							</span>
+						</div>
+						<div id="tab5" class="tab-block">
+							<div class="holder">
+								<article class="box-frame recent-post pink">
+									<a href="#" class="btn-close"><span class="icon-icon-close"></span></a>
+									<i class="icon-icon-discovery2"></i>
+									<h2>Hello</h2>
+									<p>The LSST Education and Public Outreach program has created this website to reach all sorts of people interested in astronomy, big data and our super amazing cutting edge telescope. It is our hope to encourage your deepening engagement with the data LSST collects and involve you in the research process by providing opportunities to learn, share and participate in scientific discovery.</p>
+								</article>
+								<article class="recent-post box-frame">
+									<header class="head">
+										<ul class="share">
+											<li><a href="#"><i class="icon-ico-share"></i></a></li>
+											<li>
+												<a href="#">
+													<i class="icon-ico-star"></i>
+													<i class="icon-ico-fill-star fill"></i>
+												</a>
+											</li>
+										</ul>
+										<span class="name">GALAXY DISCOVERY</span>
+									</header>
+									<h3><a href="#">Black Holes + Host Galaxies</a></h3>
+									<div class="holder">
+										<img src="images/img.jpg" alt="image description" class="alignleft">
+										<div class="txt-box">
+											<p>A team of astronomers has taken a close look at a nearby galaxy — and discovered an unusual structure that sheds light on supermassive black holes’ relationships with their host galaxies</p>
+										</div>
+									</div>
+									<time datetime="06-13-2018">June 13, 2018</time>
+								</article>
+								<article class="recent-post box-frame">
+									<header class="head">
+										<ul class="share">
+											<li><a href="#"><i class="icon-ico-share"></i></a></li>
+											<li class="active">
+												<a href="#">
+													<i class="icon-ico-star"></i>
+													<i class="icon-ico-fill-star fill"></i>
+												</a>
+											</li>
+										</ul>
+										<span class="name">GALAXIES & THE MILKY WAY</span>
+									</header>
+									<h3><a href="#">The Future of <br>Planetary Defense</a></h3>
+									<div class="holder">
+										<img src="images/img2.jpg" alt="image description" class="alignleft">
+										<div class="txt-box">
+											<p>Bryce T. Bolin and Ed Lu of the B612 Asteroid Institute discuss the problems in planetary defense from asteroids and the value of survey astronomy</p>
+										</div>
+									</div>
+									<div class="calender-box">
+										<i class="icon-icon-date"></i>
+										<span class="txt">Webcast <span>EVENT: <time datetime="2018-09-14">September 14, 2018 4pm GMT</time>.</span></span>
+									</div>
+								</article>
+								<article class="recent-post box-frame">
+									<header class="head">
+										<ul class="share">
+											<li><a href="#"><i class="icon-ico-share"></i></a></li>
+											<li class="active">
+												<a href="#">
+													<i class="icon-ico-star"></i>
+													<i class="icon-ico-fill-star fill"></i>
+												</a>
+											</li>
+										</ul>
+										<span class="name">TWITTER</span>
+									</header>
+									<h3><a href="#">@astromolly</a></h3>
+									<div class="holder">
+										<div class="txt-box">
+											<p>Scolnic on how many supernovae <a href="#">#LSST</a> will find: it's absurd! <a href="#">#astro2020s</a></p>
+											<img src="images/img3.jpg" alt="image description" class="img">
+										</div>
+									</div>
+									<time datetime="2018-07-23">July 23, 2018</time>
+								</article>
+								<article class="recent-post box-frame">
+									<header class="head">
+										<ul class="share">
+											<li><a href="#"><i class="icon-ico-share"></i></a></li>
+											<li class="active">
+												<a href="#">
+													<i class="icon-ico-star"></i>
+													<i class="icon-ico-fill-star fill"></i>
+												</a>
+											</li>
+										</ul>
+										<span class="name">LSST TECHNOLOGY</span>
+									</header>
+									<h3><a href="#">Brookhaven Builds <br>Digital Film</a></h3>
+									<div class="holder">
+										<img src="images/img4.jpg" alt="image description" class="alignleft">
+										<div class="txt-box">
+											<p>Brookhaven Lab leads the development of the sensors for the LSST, the array of precise and sensitive electronics that capture images within the digital camera.</p>
+										</div>
+									</div>
+									<time datetime="2018-07-23">July 23, 2018</time>
+								</article>
+								<article class="recent-post box-frame">
+									<header class="head">
+										<ul class="share">
+											<li><a href="#"><i class="icon-ico-share"></i></a></li>
+											<li class="active">
+												<a href="#">
+													<i class="icon-ico-star"></i>
+													<i class="icon-ico-fill-star fill"></i>
+												</a>
+											</li>
+										</ul>
+										<span class="name">CNN SPACE CENTER</span>
+									</header>
+									<h3><a href="#">‘The Universe is slowly dying,’ study shows with unprecedented precision</a></h3>
+									<div class="holder">
+										<img src="images/img5.jpg" alt="image description" class="alignleft">
+										<div class="txt-box">
+											<p>Brookhaven Lab leads the development of the sensors for the LSST, the array of precise and sensitive electronics that capture images within the digital camera.</p>
+										</div>
+									</div>
+									<img src="images/logo-cnn.jpg" alt="cnn" class="image">
+								</article>
+							</div>
+							<span class="button">
+								<a href="#" class="btn-load">LOADING MORE MEDIA <i class="icon-ico-loadmore"></i></a>
+							</span>
+						</div>
+						<div id="tab6" class="tab-block">
+							<div class="holder">
+								<article class="recent-post box-frame">
+									<header class="head">
+										<ul class="share">
+											<li><a href="#"><i class="icon-ico-share"></i></a></li>
+											<li>
+												<a href="#">
+													<i class="icon-ico-star"></i>
+													<i class="icon-ico-fill-star fill"></i>
+												</a>
+											</li>
+										</ul>
+										<span class="name">GALAXY DISCOVERY</span>
+									</header>
+									<h3><a href="#">Black Holes + Host Galaxies</a></h3>
+									<div class="holder">
+										<img src="images/img.jpg" alt="image description" class="alignleft">
+										<div class="txt-box">
+											<p>A team of astronomers has taken a close look at a nearby galaxy — and discovered an unusual structure that sheds light on supermassive black holes’ relationships with their host galaxies</p>
+										</div>
+									</div>
+									<time datetime="06-13-2018">June 13, 2018</time>
+								</article>
+								<article class="recent-post box-frame">
+									<header class="head">
+										<ul class="share">
+											<li><a href="#"><i class="icon-ico-share"></i></a></li>
+											<li class="active">
+												<a href="#">
+													<i class="icon-ico-star"></i>
+													<i class="icon-ico-fill-star fill"></i>
+												</a>
+											</li>
+										</ul>
+										<span class="name">GALAXIES & THE MILKY WAY</span>
+									</header>
+									<h3><a href="#">The Future of <br>Planetary Defense</a></h3>
+									<div class="holder">
+										<img src="images/img2.jpg" alt="image description" class="alignleft">
+										<div class="txt-box">
+											<p>Bryce T. Bolin and Ed Lu of the B612 Asteroid Institute discuss the problems in planetary defense from asteroids and the value of survey astronomy</p>
+										</div>
+									</div>
+									<div class="calender-box">
+										<i class="icon-icon-date"></i>
+										<span class="txt">Webcast <span>EVENT: <time datetime="2018-09-14">September 14, 2018 4pm GMT</time>.</span></span>
+									</div>
+								</article>
+								<article class="recent-post box-frame">
+									<header class="head">
+										<ul class="share">
+											<li><a href="#"><i class="icon-ico-share"></i></a></li>
+											<li class="active">
+												<a href="#">
+													<i class="icon-ico-star"></i>
+													<i class="icon-ico-fill-star fill"></i>
+												</a>
+											</li>
+										</ul>
+										<span class="name">TWITTER</span>
+									</header>
+									<h3><a href="#">@astromolly</a></h3>
+									<div class="holder">
+										<div class="txt-box">
+											<p>Scolnic on how many supernovae <a href="#">#LSST</a> will find: it's absurd! <a href="#">#astro2020s</a></p>
+											<img src="images/img3.jpg" alt="image description" class="img">
+										</div>
+									</div>
+									<time datetime="2018-07-23">July 23, 2018</time>
+								</article>
+								<article class="recent-post box-frame">
+									<header class="head">
+										<ul class="share">
+											<li><a href="#"><i class="icon-ico-share"></i></a></li>
+											<li class="active">
+												<a href="#">
+													<i class="icon-ico-star"></i>
+													<i class="icon-ico-fill-star fill"></i>
+												</a>
+											</li>
+										</ul>
+										<span class="name">LSST TECHNOLOGY</span>
+									</header>
+									<h3><a href="#">Brookhaven Builds <br>Digital Film</a></h3>
+									<div class="holder">
+										<img src="images/img4.jpg" alt="image description" class="alignleft">
+										<div class="txt-box">
+											<p>Brookhaven Lab leads the development of the sensors for the LSST, the array of precise and sensitive electronics that capture images within the digital camera.</p>
+										</div>
+									</div>
+									<time datetime="2018-07-23">July 23, 2018</time>
+								</article>
+								<article class="recent-post box-frame">
+									<header class="head">
+										<ul class="share">
+											<li><a href="#"><i class="icon-ico-share"></i></a></li>
+											<li class="active">
+												<a href="#">
+													<i class="icon-ico-star"></i>
+													<i class="icon-ico-fill-star fill"></i>
+												</a>
+											</li>
+										</ul>
+										<span class="name">CNN SPACE CENTER</span>
+									</header>
+									<h3><a href="#">‘The Universe is slowly dying,’ study shows with unprecedented precision</a></h3>
+									<div class="holder">
+										<img src="images/img5.jpg" alt="image description" class="alignleft">
+										<div class="txt-box">
+											<p>Brookhaven Lab leads the development of the sensors for the LSST, the array of precise and sensitive electronics that capture images within the digital camera.</p>
+										</div>
+									</div>
+									<img src="images/logo-cnn.jpg" alt="cnn" class="image">
+								</article>
+							</div>
+							<span class="button">
+								<a href="#" class="btn-load">LOADING MORE MEDIA <i class="icon-ico-loadmore"></i></a>
+							</span>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer id="footer">
+			<div class="upper-footer">
+				<a href="#" class="logo"><img src="images/logo2.png" alt="LSST"></a>
+				<p>Financial support for LSST comes from the National Science Foundation (NSF) through Cooperative Agreement No. 1258333, the Department of Energy (DOE) Office of Science under Contract No. DE-AC02-76SF00515, and private funding raised by the LSST Corporation (link is external). The NSF-funded LSST Project Office for construction was established as an operating center under management of the Association of Universities for Research in Astronomy (AURA (link is external)).  The DOE-funded effort to build the LSST camera is managed by the SLAC National Accelerator Laboratory (SLAC (link is external)).  </p>
+				<div class="meta">
+					<nav class="add-nav">
+						<ul>
+							<li><a href="#">Contact</a></li>
+							<li><a href="#">We are Hiring</a></li>
+							<li><a href="#">Business with LSST</a></li>
+						</ul>
+					</nav>
+					<ul class="social-networks">
+						<li><a href="#"><i class="icon-ico-twitter"></i></a></li>
+						<li><a href="#"><i class="icon-ico-github"></i></a></li>
+						<li><a href="#"><i class="icon-ico-instagram"></i></a></li>
+						<li><a href="#"><i class="icon-ico-facebook"></i></a></li>
+						<li><a href="#"><i class="icon-ico-youtube"></i></a></li>
+						<li><a href="#"><i class="icon-ico-tumblr"></i></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="bottom">
+				<a href="#wrapper" class="btn-top"><i class="icon-ico-back-top"></i> BACK TO TOP</a>
+				<ul class="partners">
+					<li><img src="images/partner1.jpg" alt="nsf"></li>
+					<li><img src="images/partner2.jpg" alt="aura"></li>
+					<li><img src="images/partner3.jpg" alt="energy"></li>
+					<li><img src="images/partner4.jpg" alt="lsst"></li>
+					<li><img src="images/partner5.jpg" alt="slac"></li>
+					<li><img src="images/partner6.jpg" alt="image description"></li>
+				</ul>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
