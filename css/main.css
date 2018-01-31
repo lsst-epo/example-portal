@@ -1274,7 +1274,7 @@ input[type="submit"] {
 #header .right {
 	float: right;
 	text-align: right;
-	padding: 13px 0 0;
+	/* padding: 13px 0 0; */
 }
 
 #header .lang {
@@ -1282,7 +1282,7 @@ input[type="submit"] {
 	list-style: none;
 	margin: 0;
 	overflow: hidden;
-	font-size: 9px;
+	font-size: 10px;
 	line-height: 9px;
 	font-weight: 600;
 	padding: 0 0 7px;
@@ -1486,7 +1486,7 @@ input[type="submit"] {
 
 #nav .dropdown li a:hover {
 	color: #31c9ef;
-	font-weight: 700;
+	/* font-weight: 700; */
 }
 
 #nav .dropdown li a:hover i {
@@ -6669,6 +6669,12 @@ blockquote cite strong {
 	display: block;
 }
 
+.investigations {
+	display: flex;
+	flex-flow: row wrap;
+	background-image: none;
+}
+
 #footer {
 	background: #0d1522;
 }
@@ -6849,8 +6855,19 @@ blockquote cite strong {
 }
 
 @media (min-width: 768px) {
+	#nav > ul > li.active .dropdown {
+		display: block;
+		z-index: 1;
+	}
+	
 	#nav > ul > li:hover .dropdown {
 		display: block;
+		z-index: 2;
+		background-color: #29333D;
+	}
+	
+	#nav > ul > li.active .empty {
+		display: none;
 	}
 
 	#nav > ul > li.active > a {
@@ -6859,6 +6876,11 @@ blockquote cite strong {
 
 	#nav > ul > li.active > a:before {
 		display: block;
+	}
+	
+	#nav > ul > li:hover > a:before {
+		display: block;
+		border-color: transparent transparent #29333D;
 	}
 
 	.drop-block {
@@ -6905,7 +6927,7 @@ blockquote cite strong {
 	}
 
 	#nav {
-		padding: 0 1% 0 5.5%;
+		padding: 0 1% 0 5.1%;
 		letter-spacing: 1.4px;
 		font-size: 12px;
 	}
@@ -7919,4 +7941,4 @@ blockquote cite strong {
 		width: 63px;
 	}
 }
-
+

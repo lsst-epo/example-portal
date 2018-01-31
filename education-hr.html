@@ -19,12 +19,21 @@
 						<li class="active"><a href="#">English</a></li>
 						<li><a href="#">Español</a></li>
 					</ul>
-					<a href="#" class="btn-logout">Log Out <i class="icon-ico-man"></i></a>
+					<ul class="lang">
+						<li><a href="#">Login</a></li>
+						<li><a href="#">Register</a></li>
+					</ul>
 				</div>
 				<nav id="nav">
 					<ul>
-						<li><a href="index.html"><span><i class="icon-ico-new"></i></span> NEW</a></li>
-						<li class="hide"><a href="data.html"><span><i class="icon-data"></i></span> DATA</a></li>
+						<li>
+							<a href="index.html"><span><i class="icon-ico-new"></i></span> NEW</a>
+							<div class="dropdown empty">&nbsp;</div>
+						</li>
+						<li class="hide">
+							<a href="data.html"><span><i class="icon-data"></i></span> DATA</a>
+							<div class="dropdown empty">&nbsp;</div>
+						</li>
 						<li>
 							<a href="skyviewer.html"><span><i class="icon-ico-skyviewer"></i></span> SKYVIEWER</a>
 							<div class="dropdown add2">
@@ -60,16 +69,21 @@
 							<div class="dropdown">
 								<div class="drop-holder">
 									<ul>
-										<li><a href="education-hr.html">Activities</a></li>
+										<li class="active"><a href="investigations.html">Investigations</a></li>
+										<li><a href="#">Class Management</a></li>
+										<li><a href="#">NGSS</a></li>
+										<li><a href="#">Research</a></li>
 										<li><a href="#">Professional Development</a></li>
-										<li><a href="#">Tutorials</a></li>
-										<li><a href="#">Astronomy Dictionary</a></li>
 										<li><a href="#">Online Forum</a></li>
+										<li><a href="#">Support</a></li>
 									</ul>
 								</div>
 							</div>
 						</li>
-						<li><a href="gallery.html"><span><i class="icon-ico-gallery"></i></span> GALLERY</a></li>
+						<li>
+							<a href="gallery.html"><span><i class="icon-ico-gallery"></i></span> GALLERY</a>
+							<div class="dropdown empty">&nbsp;</div>
+						</li>
 						<li>
 							<a href="collections.html"><span><i class="icon-ico-collection"></i></span> COLLECTIONS</a>
 							<div class="dropdown add">
@@ -102,58 +116,51 @@
 					</ul>
 					<div class="holder">
 						<h1>The H-R diagram -<br>a window to the stars</h1>
-						<h2>Teacher's Guide</h2>
+						<h2>LSST Teacher Guide</h2>
 					</div>
 				</header>
-				<div id="twocolumn">
+				<div id="onecolumn">
 					<div class="holder">
 						<article id="content">
 							<h3>Description and Learning Objectives</h3>
 							<p>This activity evolves the discovery that stars have fundamentally different properties (size, energy output, color and temperature).  It introduces an important tool, the <a href="#">Hertzsprung-Russell (H-R) Diagram</a>. Students will use LSST data to create an H-R Diagram, then use it to explore patterns in star characteristics. They will develop a set of rules that apply to stars on different parts of the H-R Diagram.</p>
 							<p>Students will not have an appreciation for why the H-R Diagram is such a valuable tool unless they use it in the same way as astronomers, to find information about star distances, relative ages and compositions. We recommend that you consider at least one of the follow-up activities listed below to underscore its importance in astronomy.</p>
-							<figure>
-								<img src="images/hr.png" alt="image description">
-								<figcaption>Lorem ipsum mollitia consequatur eum voluptatibus est. Reprehenderit omnis perferendis minus. Repellat incidunt eum ut reprehenderit aperiam eum ipsa. Quae sit quis adipisci consequuntur </figcaption>
-							</figure>
 							
 							<h3>Related LSST Investigations</h3>
 							<ul>
-								<li><a href="#">Sizing up the Sun</a> (Introductory)</li>
-								<li><a href="#">Ages of Star Clusters</a> (Intermediate)</li>
-								<li><a href="#">Finding the Distance to a Star Cluster</a> (Intermediate)</li>
+								<li><a href="#">Sizing up the Sun</a> (extension)</li>
+								<li><a href="#">Distance and Age of a Star Cluster</a> (extension)</li>
 							</ul>
 							
 							<h3>Level</h3>
-							<p>Introductory</p>
+							<p>Introductory (Level 1)</p>
 							
 							<h3>Time</h3>
 							<p>1-2 hours or class periods</p>
 							
 							<h3>Learning Outcomes</h3>
 							<ul>
-								<li>There is a relationship between the color of a star and its temperature.</li>
-								<li>A star's luminosity depends on its temperature and size.</li>
-								<li>There is a larger number of cooler (red) stars compared to hotter (blue) stars.</li>
-								<li>Most stars group along a diagonal strip running from the upper left to the lower right of the diagram. This is called the <em>Main Sequence</em></li>
+								<li>There are a larger number of cooler (red) stars compared to hotter (blue) stars.</li>
 								<li>Considering stars of similar temperatures, those above the Main Sequence have larger sizes, while those below are smaller. This can explain the differences in luminosity.</li>
 							</ul>
+							
+							<h3>NGSS Disciplinary Core Ideas</h3>
+							<p>HS-ESS1-1A: Stars go through stages which can be described by changes in their properties. Examples of evidence include observations of the masses and lifetimes of other stars. The study of stars’ light spectra and brightness is used to identify compositional elements of stars, their movements, and their distances from Earth.</p>
 							
 							<h3>Prerequisite Concepts</h3>
 							<ul>
 								<li>The relationship between color &amp; temperature in stars (<a href="http://www.astro.cornell.edu/academics/courses/astro201/wiens_law.htm">Wien's Law, blackbody curves</a>)</li>
 								<li>The relationship between energy output and temperature in stars (<a href="https://warwick.ac.uk/fac/sci/physics/intranet/pendulum/stefan/">Stefan- Boltzman Law</a>)</li>
 								<li>The relationship between the energy output of a star and its size (<a href="https://en.wikipedia.org/wiki/Luminosity">Luminosity equation</a>)</li>
+								<li>Students should have previously been introduced to the H-R Diagram, if only as a graphic with labeled areas (Main Sequence, Giants, White Dwarfs). Alternatively, they could be provided one as reference while doing this investigation.</li>
 							</ul>
 							
 							<h3>Instructional Videos</h3>
-							<p>Introduction: <em>Stars</em> depicts images of stars and clusters, and asks the questions, “How are stars different from each other, and what may cause these differences?"</p>
-							<p>Assessment: <em>They Might Be Giants</em> shows a group of students discussing what they learned about stars and the H-R Diagram. Your students are then asked to vote on who has the correct idea, and why.</p>
-							
-							<h3>Related Concepts</h3>
-							<p>Blackbody curves, Wien’s law, Stefan- Boltzmann law, apparent vs. absolute magnitude, spectral classes of stars, star clusters, characteristics of the Sun, distances to stars, stellar evolution, variable stars and supernovae.</p>
+							<p>Introduction: <em>Stars</em> (1 minute) depicts images of stars and clusters, and asks the questions, "How are stars different from each other, and what may cause these differences?"</p>
+							<p>Assessment: <em>They Might Be Giants</em> (3 minutes without pauses) shows a group of students discussing what they learned about stars and the H-R Diagram. Your students are periodically asked to vote on who has the correct idea, and explain why.</p>
 							
 							<h3>Teacher Notes</h3>
-							<p>The individual student data sets may be too small of a sample to reveal the classic distribution of stars shown on an H-R Diagram, but when the larger LSST data set of stars are imported or combined from class data, the patterns will become evident. </p>
+							<p>Some cluster data sets may not reveal the classic distribution of stars shown on an H-R Diagram. This may be due to a very young cluster (perhaps few giants or white dwarfs). By comparing the H-R Diagrams of the stars clusters generated by a number of other class members, the patterns will become evident.</p>
 							
 							<h3>Common Student Misconceptions</h3>
 							<ul>
@@ -161,15 +168,17 @@
 								<li>Each point on the diagram represents one star.</li>
 							</ul>
 							
+							<h3>Related Concepts</h3>
+							<p><em style="background-color:lightgoldenrodyellow;">These concepts relate to this investigation either as prerequisite knowledge, as extensions, or as future concepts to be addressed. They are provided here as a possible tool for use in instructional sequencing.</em></p>
+							<p>Blackbody curves, Wien’s law, Stefan-Boltzmann law, apparent vs. absolute magnitude, spectral classes of stars, star clusters, characteristics of the Sun, distances to stars, stellar evolution, variable stars and supernovae, Population I and II stars.</p>
+							
 							<h3>Common Student Questions</h3>
 							<ul>
 								<li>Why are there so many more red stars (or so few blue stars)?</li>
-								<li>Why are there more than one group of red (or white) stars? </li>
 								<li>Why are not all white dwarf stars white? What does it mean if a white dwarf is not white? </li>
 								<li>Why aren’t there any purple stars?</li>
 								<li>Why do we see white stars instead of green?</li>
 								<li>Why is it that the stars form groups and are not randomly scattered over the diagram?</li>
-								<li>What do the groups represent?</li>
 								<li>Why are most of the stars on the Main Sequence?</li>
 								<li>Why is the temperature axis on the H-R Diagram backwards (bigger numbers near the origin)?</li>
 							</ul>
@@ -177,22 +186,32 @@
 							<h3>Options for Differentiation</h3>
 							<p>This activity may be differentiated by assigning the difficulty level of the data: (easy, average or complex).</p>
 							
+							<h3>NGSS Assessment Rubric and sample questions for assessment</h3>
+							<ul>
+								<li><a href="docs/NGSS-assess-H-R.docx">Download</a> &nbsp;(docx)</li>
+							</ul>
+							
 							<h3>Background &amp; Resources</h3>
-							<p>The H-R Diagram is a plot of the temperature of a star (on the x- axis) vs. its energy output (on the y-axis).  In this investigation, stellar energy is listed in <a href="#">luminosity</a> values. Luminosity is a ratio of the star’s energy output to the Sun. A star with a luminosity of 100 is 100 times brighter than the Sun. Luminosity depends on two factors: the area and temperature of a star.</p>
-							<p>Most of the stars on an H-R Diagram occupy a region from upper right to lower left, the <a href="#">Main Sequence</a>. The stars above the Main Sequence (the giants and <a href="#">supergiants</a>) are brighter than Main Sequence stars because of their larger size, while the stars below it (the white dwarfs) are dimmer due to their very small size.</p>
+							<p>The H-R Diagram is a plot of the temperature of a star (on the x- axis) vs. its energy output (on the y-axis).  In this investigation, stellar energy is listed in <a href="#">luminosity</a> values. There are many variations of this plot, with additional or alternate descriptions along both axes.</p>
+							<p>Most of the stars on an H-R Diagram occupy a region from upper right to lower left, the <a href="#">Main Sequence</a>. The stars above the Main Sequence (the giants and <a href="#">supergiants</a>) are brighter than Main Sequence stars because of their larger size, while the stars below it (the <a href="#">white dwarfs</a>) are dimmer due to their very small size.</p>
 							<p>The groups of stars on the H-R Diagram represent different stages of stellar evolution.  This activity provides a launch point to learn about how stars evolve, and may be revisited once the topic has been introduced.</p>
 							<p><a href="https://cnx.org/contents/LnN76Opl@13.86:EVgehrPG@8/The-HR-Diagram">Open Stax Astronomy textbook</a></p>
 							
 							<h3>Extensions</h3>
 							<ul>
 								<li><a href="#">Sizing up the Sun</a> compares the Sun to other stars on an H-R Diagram and develops an understanding of how the H-R Diagram may be used to determine the life span, mass, size and density of other stars.</li>
-								<li><a href="#">Ages of Star Clusters</a> uses the same process as astronomers to determine the approximate age of stars in a cluster. Comparisons of two or more clusters reveal which are more evolved.</li>
-								<li><a href="#">Finding the Distance to a Star Cluster</a> uses the same process as astronomers to determine distance to a star cluster.</li>
-								<li>Other ideas: planetary nebulae, AGB stars, blue stragglers, Cepheids, YSOs, extended clusters, ultra compact dwarf galaxies (UCG), star cluster complexes, looking at the spatial distribution of clusters vs. their age or metallicity, studying star clusters in the LMC or SMC comparing globular to open clusters – age and metallicity</li>
+								<li><a href="#">Distance and Age of a Star Cluster</a> uses the same basic process as astronomers to determine distance to a star cluster and its approximate age.</li>
+							</ul>
+							<p>Ideas for student research projects originating from this investigation or its extensions:</p>
+							<ul>
+								<li>Looking at the spatial distribution of clusters vs. their size, age or distance</li>
+								<li>Comparing globular to open clusters – their relative age, size, distance, or appearance</li>
+								<li>Studying a specific sub-population of the H-R Diagram with different clusters. Examples could include planetary nebulae, AGB stars, blue stragglers, Cepheids, Young Stellar Objects, etc.</li>
+								<li>Constructing and comparing H-R Diagrams of extended clusters, dwarf galaxies or star cluster complexes</li>
+								<li>Studying star clusters in the Large Magellanic Cloud or Small Magellanic Cloud</li>
 							</ul>
 							
-							<h3>Keywords</h3>
-							<p>Hertzsprung-Russell (H-R) Diagram, stars, luminosity, Main Sequence, white dwarfs, supergiants</p>
+							<p>&nbsp;</p>
 							
 							<div class="newsletter">
 								<form action="http://epo-staging.lsst.rocks/">
@@ -205,19 +224,6 @@
 								</form>
 							</div>
 						</article>
-						<aside id="sidebar">
-							<ul class="concepts-list">
-								<li style="margin-bottom:0">
-									<span class="ico"><i class="icon-icon-telecope"></i></span>
-								</li>
-							</ul>
-							<h4>NGSS Disciplinary<br>Core Ideas</h4>
-							<p style="text-transform: none;"><bold>HS-ESS1-1A:</bold> Stars go through stages which can be described by changes in their properties. Examples of evidence include observations of the masses and lifetimes of other stars. The study of stars’ light spectra and brightness is used to identify compositional elements of stars, their movements, and their distances from Earth.</p>
-							<p><a href="#">NGSS Assessment Rubric and sample questions for assessment</a></p>
-							<div class="buttons">
-								<a href="http://epo-staging.lsst.rocks/" class="btn">Launch Activity</a>
-							</div>
-						</aside>
 					</div>
 				</div>
 			</div>
