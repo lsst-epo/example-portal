@@ -2294,6 +2294,26 @@ input[type="submit"] {
 	color: #64778c;
 }
 
+.btn-red {
+	display: block; 
+	color: #fff; 
+	background: #db0a5b none repeat scroll 0 0; 
+	padding: 7px 11px 7px 10px; 
+	text-decoration: none; 
+	transition: color 0.3s ease-in-out 0s, background 0.3s ease-in-out 0s; 
+	font-size: 12px; 
+	font-weight: 400; 
+	letter-spacing: 1px; 
+	line-height: 18px; 
+	list-style: outside none none; 
+	text-transform: uppercase;
+	margin: 0 20px 20px;
+}
+
+.btn-red a {
+	color: #fff;
+}
+
 .js-tab-hidden {
 	display: block !important;
 	left: -9999px !important;
