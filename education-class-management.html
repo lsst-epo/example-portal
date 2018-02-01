@@ -8,6 +8,9 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" defer></script>
 	<script>window.jQuery || document.write('<script src="js/jquery-3.2.1.min.js" defer><\/script>')</script>
 	<script src="js/jquery.main.js" defer></script>
+	<!-- authorization -->
+	<script src="//cdn.auth0.com/js/lock/10.0/lock.min.js"></script>
+	<script src="js/auth.js"></script>
 </head>
 <body>
 	<div id="wrapper">
@@ -20,8 +23,8 @@
 						<li><a href="#">Español</a></li>
 					</ul>
 					<ul class="lang">
-						<li><a href="#">Login</a></li>
-						<li><a href="#">Register</a></li>
+						<li><a href="javascript:lock.show()" id="username">Login</a></li>
+						<li><a href="javascript:lock.show()" id="authaction">Register</a></li>
 					</ul>
 				</div>
 				<nav id="nav">
@@ -110,8 +113,54 @@
 						<article id="content">
 							<p>&nbsp;</p>
 							
-							<h3>Class Management</h3>
-							<p>ToDo...</p>
+							<div id="unauthenticated">
+								<h3>In the future, info needed for an account:</h3>
+								<ul>
+									<li>Teacher name</li>
+									<li>School name</li>
+									<li>School email address (verification process)</li>
+									<li>City, State or City/Country</li>
+									<li>Unique username</li>
+								</ul>
+								
+								<h5>For demo purposes, click "Login" in the upper-right and create an account.</h5>
+							</div>
+							<div id="authenticated" class="hidden">
+								<h2>Hi <span id="myname"></span>!</h2>
+								<h3>Functionality yet to be implemented...</h3>
+								
+								<ul>
+									<li>Upload classes and rosters</li>
+									<ul>
+										<li>Create Class, such as Period 5 Astronomy</li>
+										<li>Upload roster for each class</li>
+									</ul>
+									<li>Assign Investigations (select from drop-down menu)</li>
+									<li>Assign level of challenge (buttons or drop-down menu). Selections made here can be saved and applied to other investigations. The default level is Average for all. Click Skip to select this option.</li>
+									<li>Create groups (This is an option. Some instructors will not use it. For those who do, the notebooks will be assigned to each group, not each individual:</li>
+									<ul>
+										<li>Enter number of people in group</li>
+										<li>Assign randomly (this option will parse the roster and create groups based on the number entered above. Each group should be designated with a name or number.)</li>
+										<li>Assign by challenge level (students in group are all at the same challenge level)</li>
+										<li>Mix challenge levels (groups have students of mixed abilities)</li>
+										<li>Assign by selection (teacher manually selects group members)</li>
+										<li>There should be an option to save the groups for future investigations.</li>
+										<li>There should also be options to edit, export and print groups.</li>
+									</ul>
+									<li>Assign data (it is necessary to break this out into a separate step so that the level of challenge and groups are assigned prior to data) Check the preferred option:</li>
+									<ul>
+										<li>Assign randomly (this option will parse the roster and create groups based on the number entered above. Each group will be designated with a name or number.)</li>
+										<li> Assign by challenge level (students in group are all at the same challenge level)</li>
+										<li>Mix challenge levels (groups have students of mixed abilities)</li>
+										<li>Assign by selection (Teacher manually selects group members. If this option is selected, the class roster is displayed, and teachers click on each student to create a group. Each group is automatically created when it reaches capacity, or teachers manually click the create groups button each time.)</li>
+									</ul>
+									<li>Check student progress (class view or roster list shows options such as: not started, in progress, data submitted*, notebook submitted) *In some activities, teachers may ask for data sets to be submitted prior to completion of the notebook activity so that they may be combined into one large class set</li>
+									<li>Recognition: printable certificates for students</li>
+								</ul>
+								
+								<h5>For demo purposes, click "Logout" in the upper-right.</h5>
+							</div>
+							
 							
 						</article>
 					</div>
@@ -153,5 +202,23 @@
 			</div>
 		</footer>
 	</div>
+	<script>
+		window.onload = function() {
+			// auth check
+			var p = JSON.parse(sessionStorage.getItem('auth0_profile'));
+			if (p && p.name) {
+				// user is authenticated
+				$('#myname').text(p.name);
+				$('#username').text(p.name).on('click', function() { return false; });
+				$('#authaction').text('Logout').on('click', function () {
+					sessionStorage.removeItem('auth0_id_token');
+					sessionStorage.removeItem('auth0_profile');
+					location.reload();
+				});
+				$('#authenticated').toggleClass('hidden');
+				$('#unauthenticated').toggleClass('hidden');
+			}
+		}
+	</script>
 </body>
 </html>

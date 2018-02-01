@@ -1247,6 +1247,10 @@ input[type="submit"] {
 	background: #e3e3e3;
 }
 
+.hidden {
+	display: none;
+}
+
 #header {
 	background: #fff;
 	position: relative;
