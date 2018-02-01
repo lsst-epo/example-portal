@@ -2,7 +2,20 @@
 
 // https://auth0.com/docs/quickstart/spa/vanillajs
 
-var lock = new Auth0Lock('aA4nezvlbC9WncfECwCNFtTQAC1al0cg', 'lsstepo.auth0.com', {
+var client_id = 'aA4nezvlbC9WncfECwCNFtTQAC1al0cg';
+var domain = 'lsstepo.auth0.com';
+
+var signup = new Auth0Lock(client_id, domain, {
+    auth: {
+        params: {
+            scope: 'openid nickname'
+        }
+    },
+    initialScreen: 'signUp',
+    loginAfterSignUp: true
+});
+
+var lock = new Auth0Lock(client_id, domain, {
     auth: {
         params: {
             scope: 'openid nickname'
