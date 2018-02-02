@@ -1251,6 +1251,15 @@ input[type="submit"] {
 	display: none;
 }
 
+.ngss-table table, th, td {
+	padding:8px;
+	border: 1px solid black;
+}
+
+.ngss-table .highlight {
+	background-color: aliceblue;
+}
+
 #header {
 	background: #fff;
 	position: relative;
