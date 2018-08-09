@@ -1,3 +1,3 @@
 # example-portal
 
-Temporary website for [epoportal.cloud](http://epoportal.cloud/)
+Concept 2 for EPO website
